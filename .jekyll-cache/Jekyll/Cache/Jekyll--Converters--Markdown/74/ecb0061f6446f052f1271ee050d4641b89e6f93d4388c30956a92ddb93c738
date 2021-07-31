@@ -1,0 +1,45 @@
+I"|<h1 id="참고한-블로그">참고한 블로그</h1>
+
+<p><a href="https://honbabzone.com/jekyll/start-gitHubBlog/">github setting</a></p>
+
+<h1 id="step-by-step">step by step</h1>
+
+<ol>
+  <li>
+    <p>최상위 index.html</p>
+  </li>
+  <li>
+    <p>_data 디렉토리의 navigation.yml에서 네비게이션 바를 설정할 수 있다.</p>
+  </li>
+</ol>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># main links</span>
+<span class="na">main</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">연도별</span><span class="nv"> </span><span class="s">포스트"</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/posts/</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">카테고리"</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/categories/</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">태그"</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/tags/</span>
+</code></pre></div></div>
+
+<ol>
+  <li>_pages 디렉토리에서 위에서 설정한 navigation url 매핑이 된다.</li>
+</ol>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># 카테고리 예시</span>
+<span class="p">
+---
+</span>
+title: "카테고리 별" # 제목
+layout: categories # <span class="se">\_</span>layout폴더에서 어떤 것을 보여줄 것인지 html 파일
+permalink: /categories/ # url 매핑
+author_profile: true # 좌측의 유저 프로필
+<span class="p">
+---
+</span></code></pre></div></div>
+
+<ol>
+  <li>_layout</li>
+</ol>
+:ET

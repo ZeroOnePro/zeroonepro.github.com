@@ -1,20 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://itsbeenalongday.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://itsbeenalongday.github.io//" rel="alternate" type="text/html" /><updated>2021-08-01T02:36:01+09:00</updated><id>https://itsbeenalongday.github.io//feed.xml</id><title type="html">이론가가 되는 그날 까지</title><subtitle>유성민 기술 블로그</subtitle><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><entry><title type="html">setting</title><link href="https://itsbeenalongday.github.io//blog/setting/" rel="alternate" type="text/html" title="setting" /><published>2021-08-01T00:00:00+09:00</published><updated>2021-08-01T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//blog/setting</id><content type="html" xml:base="https://itsbeenalongday.github.io//blog/setting/">&lt;h1 id=&quot;참고한-블로그-및-코드&quot;&gt;참고한 블로그 및 코드&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://honbabzone.com/jekyll/start-gitHubBlog/&quot;&gt;github setting blog&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://github.com/Itsbeenalongday/7271kim.github.com&quot;&gt;github code&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://itsbeenalongday.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://itsbeenalongday.github.io//" rel="alternate" type="text/html" /><updated>2021-08-01T02:50:56+09:00</updated><id>https://itsbeenalongday.github.io//feed.xml</id><title type="html">이론가가 되는 그날 까지</title><subtitle>유성민 기술 블로그</subtitle><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><entry><title type="html">setting</title><link href="https://itsbeenalongday.github.io//blog/setting/" rel="alternate" type="text/html" title="setting" /><published>2021-08-01T00:00:00+09:00</published><updated>2021-08-01T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//blog/setting</id><content type="html" xml:base="https://itsbeenalongday.github.io//blog/setting/">&lt;p&gt;&lt;br /&gt;
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;how-to-run&quot;&gt;How to Run?&lt;/h1&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve &lt;span class=&quot;nt&quot;&gt;--livereload&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# hot-reload option&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-wl&quot; data-lang=&quot;wl&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;serve&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;livereload&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;hot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;reload&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;option&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;hr /&gt;
 
@@ -121,7 +113,9 @@ author_profile: true # 좌측의 유저 프로필
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 
 
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-excerpt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;참고한 블로그 및 코드
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-excerpt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
@@ -179,4 +173,39 @@ _posts
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;localhost:4000/admin&quot;&gt;admin&lt;/a&gt; 에서도 작성할 수 있다. (단, local server 실행 중이어야 한다.)&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Blog" /><category term="blog" /><category term="jekyll" /><summary type="html">참고한 블로그 및 코드</summary></entry></feed>
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;마크다운-메타-태그&quot;&gt;마크다운 메타 태그&lt;/h1&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;setting&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 페이지 제목&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;single&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 어떤 레이아웃을 사용할 것인지? =&amp;gt; _layouts/single.html&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;author_profile&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 좌측에 유저 프로필 띄울 건지&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;read_time&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 읽는데 얼마나 걸리는지 1분에 200자로 설정되있고 그걸 기준으로 계산됨&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;comments&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 댓글 허용&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;share&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 공유 허용&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;related&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 연관 포스트&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;popular&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 인기 포스트&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 카테고리 등록&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Blog&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;toc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 목차&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;toc_sticky&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 목차 스티키하게 (고정)&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;toc_label&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;목차&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 목차 라벨&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Jekyll blog setting&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 페이지 설명&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;blog&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 태그 배열형식으로 작성하기&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;meta_keywords&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;깃블로그, GitBlog, GitHub블로그, minimal-mistakes, Jekyll&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;참고자료&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;&lt;a href=&quot;https://honbabzone.com/jekyll/start-gitHubBlog/&quot;&gt;github setting blog&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Itsbeenalongday/7271kim.github.com&quot;&gt;github code&lt;/a&gt;&lt;/p&gt;</content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Blog" /><category term="blog" /><category term="jekyll" /><summary type="html"></summary></entry></feed>

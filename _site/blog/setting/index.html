@@ -310,7 +310,7 @@
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="setting">
-    <meta itemprop="description" content="참고한 블로그">
+    <meta itemprop="description" content="참고한 블로그 및 코드">
     <meta itemprop="datePublished" content="2021-08-01T00:00:00+09:00">
     
 
@@ -335,7 +335,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          1 분 소요
         
       </span>
     
@@ -350,24 +350,45 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#참고한-블로그">참고한 블로그</a></li><li><a href="#step-by-step">step by step</a></li></ul>
+              <ul class="toc__menu"><li><a href="#참고한-블로그-및-코드">참고한 블로그 및 코드</a></li><li><a href="#how-to-run">How to Run?</a></li><li><a href="#step-by-step">step by step</a></li><li><a href="#작성-요령">작성 요령</a></li></ul>
 
             </nav>
           </aside>
         
-        <h1 id="참고한-블로그">참고한 블로그</h1>
+        <h1 id="참고한-블로그-및-코드">참고한 블로그 및 코드</h1>
 
-<p><a href="https://honbabzone.com/jekyll/start-gitHubBlog/">github setting</a></p>
+<p><a href="https://honbabzone.com/jekyll/start-gitHubBlog/">github setting blog</a><br />
+<a href="https://github.com/Itsbeenalongday/7271kim.github.com">github code</a></p>
+
+<hr />
+
+<p><br />
+<br />
+<br /></p>
+
+<h1 id="how-to-run">How to Run?</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nv">$ </span>jekyll serve <span class="nt">--livereload</span> <span class="c"># hot-reload option</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<p><br />
+<br />
+<br /></p>
 
 <h1 id="step-by-step">step by step</h1>
 
 <ol>
-  <li>
-    <p>최상위 index.html</p>
-  </li>
-  <li>
-    <p>_data 디렉토리의 navigation.yml에서 네비게이션 바를 설정할 수 있다.</p>
-  </li>
+  <li>최상위는 index.html</li>
+</ol>
+
+<p><br /></p>
+
+<ol>
+  <li>_data 디렉토리의 navigation.yml에서 네비게이션 바를 설정할 수 있다.</li>
 </ol>
 
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># main links</span>
@@ -379,6 +400,8 @@
   <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">태그"</span>
     <span class="na">url</span><span class="pi">:</span> <span class="s">/tags/</span>
 </code></pre></div></div>
+
+<p><br /></p>
 
 <ol>
   <li>_pages 디렉토리에서 위에서 설정한 navigation url 매핑이 된다.</li>
@@ -396,8 +419,10 @@ author_profile: true # 좌측의 유저 프로필
 ---
 </span></code></pre></div></div>
 
+<p><br /></p>
+
 <ol>
-  <li>_layout 폴더에서는 마크다운에서 html로 트랜스 파일링된 파일들이 저장된다.</li>
+  <li>_layout 폴더에서는 마크다운에서 html로 트랜스 파일링할 때 잡을 뼈대가 저장되는 파일이다.</li>
 </ol>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- post 예시 --&gt;</span>
@@ -453,7 +478,7 @@ author_profile: true # 좌측의 유저 프로필
   <span class="nt">&lt;/p&gt;</span>
 
 
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>참고한 블로그
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>참고한 블로그 및 코드
 <span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/article&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -466,6 +491,52 @@ author_profile: true # 좌측의 유저 프로필
 <span class="nt">&lt;/section&gt;</span>
 
 </code></pre></div></div>
+
+<p><br /></p>
+
+<ol>
+  <li>최종적으로 생성된 파일들은 _site 디렉토리에 저장된다.</li>
+</ol>
+
+<hr />
+
+<p><br />
+<br />
+<br /></p>
+
+<h1 id="작성-요령">작성 요령</h1>
+
+<ol>
+  <li>_posts 디렉토리 하위에 연도별로 작성할 계획임</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 현재 디렉토리 구조</span>
+
+_posts
+│   └── 2021
+│       ├── blog
+│       ├── node.js
+│       ├── rails
+│       └── react
+</code></pre></div></div>
+
+<p><br /></p>
+
+<ol>
+  <li>마크다운 파일형식은 꼭 yyyy-mm-dd-title.md를 지켜야 한다.</li>
+</ol>
+
+<p><br /></p>
+
+<ol>
+  <li>이제 notion에서 작성해서 export하여 여기다가 올리자</li>
+</ol>
+
+<p><br /></p>
+
+<ol>
+  <li><a href="localhost:4000/admin">admin</a> 에서도 작성할 수 있다. (단, local server 실행 중이어야 한다.)</li>
+</ol>
 
         
       </section>

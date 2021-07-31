@@ -1,16 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://itsbeenalongday.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://itsbeenalongday.github.io//" rel="alternate" type="text/html" /><updated>2021-08-01T02:22:36+09:00</updated><id>https://itsbeenalongday.github.io//feed.xml</id><title type="html">이론가가 되는 그날 까지</title><subtitle>유성민 기술 블로그</subtitle><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><entry><title type="html">setting</title><link href="https://itsbeenalongday.github.io//blog/setting/" rel="alternate" type="text/html" title="setting" /><published>2021-08-01T00:00:00+09:00</published><updated>2021-08-01T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//blog/setting</id><content type="html" xml:base="https://itsbeenalongday.github.io//blog/setting/">&lt;h1 id=&quot;참고한-블로그&quot;&gt;참고한 블로그&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://itsbeenalongday.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://itsbeenalongday.github.io//" rel="alternate" type="text/html" /><updated>2021-08-01T02:36:01+09:00</updated><id>https://itsbeenalongday.github.io//feed.xml</id><title type="html">이론가가 되는 그날 까지</title><subtitle>유성민 기술 블로그</subtitle><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><entry><title type="html">setting</title><link href="https://itsbeenalongday.github.io//blog/setting/" rel="alternate" type="text/html" title="setting" /><published>2021-08-01T00:00:00+09:00</published><updated>2021-08-01T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//blog/setting</id><content type="html" xml:base="https://itsbeenalongday.github.io//blog/setting/">&lt;h1 id=&quot;참고한-블로그-및-코드&quot;&gt;참고한 블로그 및 코드&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://honbabzone.com/jekyll/start-gitHubBlog/&quot;&gt;github setting&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://honbabzone.com/jekyll/start-gitHubBlog/&quot;&gt;github setting blog&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Itsbeenalongday/7271kim.github.com&quot;&gt;github code&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;how-to-run&quot;&gt;How to Run?&lt;/h1&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve &lt;span class=&quot;nt&quot;&gt;--livereload&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# hot-reload option&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;step-by-step&quot;&gt;step by step&lt;/h1&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;최상위 index.html&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;_data 디렉토리의 navigation.yml에서 네비게이션 바를 설정할 수 있다.&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;최상위는 index.html&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;_data 디렉토리의 navigation.yml에서 네비게이션 바를 설정할 수 있다.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# main links&lt;/span&gt;
@@ -22,6 +43,8 @@
   &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;태그&quot;&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/tags/&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;_pages 디렉토리에서 위에서 설정한 navigation url 매핑이 된다.&lt;/li&gt;
@@ -39,8 +62,10 @@ author_profile: true # 좌측의 유저 프로필
 ---
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;ol&gt;
-  &lt;li&gt;_layout 폴더에서는 마크다운에서 html로 트랜스 파일링된 파일들이 저장된다.&lt;/li&gt;
+  &lt;li&gt;_layout 폴더에서는 마크다운에서 html로 트랜스 파일링할 때 잡을 뼈대가 저장되는 파일이다.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- post 예시 --&amp;gt;&lt;/span&gt;
@@ -96,7 +121,7 @@ author_profile: true # 좌측의 유저 프로필
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 
 
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-excerpt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;참고한 블로그
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-excerpt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;참고한 블로그 및 코드
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
@@ -108,4 +133,50 @@ author_profile: true # 좌측의 유저 프로필
   &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/section&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Blog" /><category term="blog" /><category term="jekyll" /><summary type="html">참고한 블로그</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;최종적으로 생성된 파일들은 _site 디렉토리에 저장된다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;작성-요령&quot;&gt;작성 요령&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;_posts 디렉토리 하위에 연도별로 작성할 계획임&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 현재 디렉토리 구조&lt;/span&gt;
+
+_posts
+│   └── 2021
+│       ├── blog
+│       ├── node.js
+│       ├── rails
+│       └── react
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;마크다운 파일형식은 꼭 yyyy-mm-dd-title.md를 지켜야 한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;이제 notion에서 작성해서 export하여 여기다가 올리자&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;localhost:4000/admin&quot;&gt;admin&lt;/a&gt; 에서도 작성할 수 있다. (단, local server 실행 중이어야 한다.)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Blog" /><category term="blog" /><category term="jekyll" /><summary type="html">참고한 블로그 및 코드</summary></entry></feed>

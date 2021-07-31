@@ -61,7 +61,7 @@ atom_feed:
   hide: # true, false (default)
 search: #, false (default)
 search_full_content: #, false (default)
-search_provider: "algolia" # lunr (default), algolia, google
+search_provider: # lunr (default), algolia, google
 algolia:
   application_id: # YOUR_APPLICATION_ID
   index_name: # YOUR_INDEX_NAME
@@ -102,7 +102,7 @@ analytics:
 author:
   name: "유성민"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "아주대학교 소프트웨어학과 <br/> 인썸니아 재직 중"
+  bio: "가짜 개발자"
   location: "경기도 수원시"
   email: "mailto:dbtjdals1771@ajou.ac.kr"
   links:

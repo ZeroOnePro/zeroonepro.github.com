@@ -16,19 +16,19 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Site Settings
 locale: "ko-KR"
-title: "모르는 것이 없는 그날 까"
-title_separator: "-"
-subtitle: # site tagline that appears below site title in masthead
+title: "모르는 것이 없는 그날 까지"
+title_separator: "&#124;"
+subtitle: "more more more" # 타이틀 아래에 나올 작은 글씨
 name: "유성민"
-description: "유성민 기록 블로그"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: # the subpath of your site, e.g. "/blog"
-repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+description: "유성민 기술 블로그"
+url: "https://itsbeenalongday.github.io/"
+baseurl: "/blog"
+repository: "https://github.com/Itsbeenalongday?tab=repositories"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
-words_per_minute: 200
+breadcrumbs: true # true, false (default)
+words_per_minute: 200 # 해당 포스트 읽는데 걸리는 시간을 계산하기 위해 대락 분당 읽는 수가 몇글자가 될지 적는 공간.
 comments:
   provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -102,7 +102,7 @@ analytics:
 author:
   name: "유성민"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "인썸니아 재직 중"
+  bio: "아주대학교 소프트웨어학과 <br/> 인썸니아 재직 중"
   location: "경기도 수원시"
   email:
   links:
@@ -136,7 +136,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/Itsbeenalongday?tab=repositories"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -277,3 +277,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true

@@ -1,0 +1,289 @@
+I"�7<p><br />
+<br />
+<br /></p>
+
+<h1 id="how-to-run">How to Run?</h1>
+
+<figure class="highlight"><pre><code class="language-wl" data-lang="wl"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nv">$</span><span class="w"> </span><span class="nv">jekyll</span><span class="w"> </span><span class="nv">serve</span><span class="w"> </span><span class="o">--</span><span class="nv">livereload</span><span class="w"> </span><span class="nf">#</span><span class="w"> </span><span class="nv">hot</span><span class="o">-</span><span class="nv">reload</span><span class="w"> </span><span class="nv">option</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<hr />
+
+<p><br />
+<br />
+<br /></p>
+
+<h1 id="step-by-step">step by step</h1>
+
+<ol>
+  <li>최상위는 index.html</li>
+</ol>
+
+<p><br /></p>
+
+<ol>
+  <li>_data 디렉토리의 navigation.yml에서 네비게이션 바를 설정할 수 있다.</li>
+</ol>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># main links</span>
+<span class="na">main</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">연도별</span><span class="nv"> </span><span class="s">포스트"</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/posts/</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">카테고리"</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/categories/</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">태그"</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/tags/</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<ol>
+  <li>_pages 디렉토리에서 위에서 설정한 navigation url 매핑이 된다.</li>
+</ol>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># 카테고리 예시</span>
+<span class="p">
+---
+</span>
+title: "카테고리 별" # 제목
+layout: categories # <span class="se">\_</span>layout폴더에서 어떤 것을 보여줄 것인지 html 파일
+permalink: /categories/ # url 매핑
+author_profile: true # 좌측의 유저 프로필
+<span class="p">
+---
+</span></code></pre></div></div>
+
+<p><br /></p>
+
+<ol>
+  <li>_layout 폴더에서는 마크다운에서 html로 트랜스 파일링할 때 잡을 뼈대가 저장되는 파일이다.</li>
+</ol>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- post 예시 --&gt;</span>
+--- layout: archive --- 
+<span class="c">&lt;!-- 작성된 마크다운이 트랜스 파일링되어 렌더링 됨 --&gt;</span>
+
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"taxonomy__index"</span><span class="nt">&gt;</span>
+   
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#2021"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>2021<span class="nt">&lt;/strong&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"taxonomy__count"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  
+<span class="nt">&lt;/ul&gt;</span>
+
+  
+<span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"2021"</span> <span class="na">class=</span><span class="s">"taxonomy__section"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__subtitle"</span><span class="nt">&gt;</span>2021<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"entries-list"</span><span class="nt">&gt;</span>
+     
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js,%20theory/%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>핵심 개념 이해하기
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          7 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>1.1 핵심 개념 이해하기
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+  
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/%EC%84%9C%EB%B2%84%EB%A1%9C%EC%84%9C%EC%9D%98-%EB%85%B8%EB%93%9C/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>서버로서의 노드
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          2 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>1.2 서버로서의 노드
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+  
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/blog/setting/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>setting
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          2 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+
+
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+ 
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#page-title"</span> <span class="na">class=</span><span class="s">"back-to-top"</span>
+    <span class="nt">&gt;</span>맨 위로 이동
+    <span class="ni">&amp;uarr;</span><span class="nt">&lt;/a</span>
+  <span class="nt">&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+</code></pre></div></div>
+
+<p><br /></p>
+
+<ol>
+  <li>최종적으로 생성된 파일들은 _site 디렉토리에 저장된다.</li>
+</ol>
+
+<hr />
+
+<p><br />
+<br />
+<br /></p>
+
+<h1 id="작성-요령">작성 요령</h1>
+
+<ol>
+  <li>_posts 디렉토리 하위에 연도별로 작성할 계획임</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 현재 디렉토리 구조</span>
+
+_posts
+│   └── 2021
+│       ├── blog
+│       ├── node.js
+│       ├── rails
+│       └── react
+</code></pre></div></div>
+
+<p><br /></p>
+
+<ol>
+  <li>마크다운 파일형식은 꼭 yyyy-mm-dd-title.md를 지켜야 한다.</li>
+</ol>
+
+<p><br /></p>
+
+<ol>
+  <li>이제 notion에서 작성해서 export하여 여기다가 올리자</li>
+</ol>
+
+<p><br /></p>
+
+<ol>
+  <li><a href="localhost:4000/admin">admin</a> 에서도 작성할 수 있다. (단, local server 실행 중이어야 한다.)</li>
+</ol>
+
+<p><br />
+<br />
+<br /></p>
+
+<h1 id="마크다운-메타-데이터">마크다운 메타 데이터</h1>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">setting</span> <span class="c1"># 페이지 제목</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">single</span> <span class="c1"># 어떤 레이아웃을 사용할 것인지? =&gt; _layouts/single.html</span>
+<span class="na">author_profile</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># 좌측에 유저 프로필 띄울 건지</span>
+<span class="na">read_time</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># 읽는데 얼마나 걸리는지 1분에 200자로 설정되있고 그걸 기준으로 계산됨</span>
+<span class="na">comments</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># 댓글 허용</span>
+<span class="na">share</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># 공유 허용</span>
+<span class="na">related</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># 연관 포스트</span>
+<span class="na">popular</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># 인기 포스트</span>
+<span class="na">categories</span><span class="pi">:</span> <span class="c1"># 카테고리 등록</span>
+  <span class="pi">-</span> <span class="s">Blog</span>
+<span class="na">toc</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># 목차</span>
+<span class="na">toc_sticky</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># 목차 스티키하게 (고정)</span>
+<span class="na">toc_label</span><span class="pi">:</span> <span class="s">목차</span> <span class="c1"># 목차 라벨</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Jekyll blog setting</span> <span class="c1"># 페이지 설명</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">blog</span><span class="pi">,</span> <span class="nv">jekyll</span><span class="pi">]</span> <span class="c1"># 태그 배열형식으로 작성하기</span>
+<span class="na">meta_keywords</span><span class="pi">:</span> <span class="s">깃블로그, GitBlog, GitHub블로그, minimal-mistakes, Jekyll</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p><br />
+<br />
+<br /></p>
+
+<p><strong>참고자료</strong></p>
+
+<p class="notice--info"><a href="https://honbabzone.com/jekyll/start-gitHubBlog/">setting meunal blog</a><br />
+<a href="https://github.com/Itsbeenalongday/7271kim.github.com">jkyell blog git example</a><br />
+<a href="https://github.com/mmistakes/minimal-mistakes">mmistakes git</a></p>
+:ET

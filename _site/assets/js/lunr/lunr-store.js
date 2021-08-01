@@ -1,4 +1,10 @@
 var store = [{
+        "title": "할 일 목록",
+        "excerpt":"   notion에서 블로그로 이전 중 Notion   Running      React   Rails   NestJs   Jeklly github.io notion 연동   PS   Wait      Crawling   Ready      CS review   CI / CD   notion webhook 하나 만들까? 일일이 하는거 귀찮   New   Terminal  ","categories": ["To do"],
+        "tags": ["To do","Road map"],
+        "url": "/to%20do/%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/",
+        "teaser": null
+      },{
         "title": "Jekyll 블로그 세팅하기",
         "excerpt":"How to Run? 1 $ jekyll serve --livereload # hot-reload option step by step 최상위는 index.html _data 디렉토리의 navigation.yml에서 네비게이션 바를 설정할 수 있다. # main links main: - title: \"연도별 포스트\" url: /posts/ - title: \"카테고리\" url: /categories/ - title: \"태그\" url: /tags/ _pages 디렉토리에서 위에서 설정한 navigation url...","categories": ["Blog"],
         "tags": ["blog","jekyll"],

@@ -30,7 +30,7 @@ var store = [{
         "teaser": null
       },{
         "title": "참고할 만한 사이트 모음",
-        "excerpt":"1.5 참고할 만한 사이트 모음      노드 공식 사이트: https://nodejs.org/ko   노드 공식 사이트의 가이드: https://nodejs.org/ko/docs/guides/   노드에 대한 전반적인 설명: https://nodejs.dev/   이벤트 루프 설명: https://nodejs.org/ko/docs/guides/event-loop-timers-and-nexttick/   이벤트 루프에 대한 시각적 설명: http://latentflip.com/loupe  ","categories": ["Node.js"],
+        "excerpt":"1.5 참고할 만한 사이트 모음      노드 공식 사이트: https://nodejs.org/ko   노드 공식 사이트의 가이드: https://nodejs.org/ko/docs/guides/   노드에 대한 전반적인 설명: https://nodejs.dev/   이벤트 루프 설명: https://nodejs.org/ko/docs/guides/event-loop-timers-and-nexttick/   이벤트 루프에 대한 시각적 설명: http://latentflip.com/loupe   (Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.  ","categories": ["Node.js"],
         "tags": ["Node.js","theory"],
         "url": "/node.js/%EC%B0%B8%EA%B3%A0%ED%95%A0-%EB%A7%8C%ED%95%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%AA%A8%EC%9D%8C/",
         "teaser": null

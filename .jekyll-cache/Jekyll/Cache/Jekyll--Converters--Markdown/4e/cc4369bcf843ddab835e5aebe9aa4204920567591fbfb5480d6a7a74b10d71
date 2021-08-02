@@ -1,10 +1,8 @@
-I"J<h1 id="14-개발-환경-설정하기">1.4 개발 환경 설정하기</h1>
+I"�	<h1 id="14-개발-환경-설정하기">1.4 개발 환경 설정하기</h1>
 
 <ol>
   <li>Node 설치</li>
 </ol>
-
-<p><img src="1%204%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20af97a716c2324dc28191dcddbdd774c9/Untitled.png" alt="1%204%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20af97a716c2324dc28191dcddbdd774c9/Untitled.png" /></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># mac</span>
 <span class="nv">$ </span>brew <span class="nb">install </span>node
@@ -47,4 +45,6 @@ v16.4.1
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm <span class="nb">install</span> <span class="nt">-g</span> npm
 </code></pre></div></div>
+
+<p><strong>(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.</strong></p>
 :ET

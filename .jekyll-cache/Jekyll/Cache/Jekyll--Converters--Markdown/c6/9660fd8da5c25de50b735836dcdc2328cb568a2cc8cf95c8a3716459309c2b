@@ -1,0 +1,88 @@
+I")'<h1 id="218-async--await">2.1.8 async / await</h1>
+
+<p>promise가 콜백 지옥을 해결해줬지만 여전히 코드는 장황하다. then과 catch가 계속 반복되기 때문이다.</p>
+
+<p>async / await 문법은 프로미스를 사용한 코드를 한 번 더 깔끔하게 줄여줄 수 있다.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">findAndSaveUser</span> <span class="o">=</span> <span class="p">(</span><span class="nx">Users</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+	<span class="nx">Users</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({})</span>
+		<span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">user</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+			<span class="nx">user</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">you</span><span class="dl">'</span><span class="p">;</span>
+			<span class="k">return</span> <span class="nx">user</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span> <span class="c1">// 이는 프로미스 객체를 리턴해야 한다.</span>
+		<span class="p">})</span>
+		<span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">user</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+			<span class="nx">user</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">you</span><span class="dl">'</span><span class="p">;</span>
+			<span class="k">return</span> <span class="nx">User</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({</span> <span class="na">gender</span><span class="p">:</span> <span class="dl">'</span><span class="s1">m</span><span class="dl">'</span> <span class="p">})</span> <span class="c1">// 마찬가지로 프로미스 객체를 리턴하는 함수여야 한다.</span>
+		<span class="p">})</span>
+		<span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">user</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+			<span class="p">...</span>
+		<span class="p">})</span>
+		<span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+			<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+		<span class="p">})</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>앞서 프로미스 장에서 봤던 예제이다. 콜백과 다르게 코드의 깊이가 깊어지진 않지만, 여전히 코드가 길다.</p>
+
+<p>async / await 문법을 사용하면 다음과 같이 바꿀 수 있다.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">findAndSaveUser</span> <span class="o">=</span> <span class="k">async</span> <span class="p">(</span><span class="nx">User</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">user</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">User</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({});</span>
+  <span class="nx">user</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">you</span><span class="dl">"</span><span class="p">;</span>
+  <span class="nx">user</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">user</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+  <span class="nx">user</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">User</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({</span> <span class="na">gender</span><span class="p">:</span> <span class="dl">"</span><span class="s2">m</span><span class="dl">"</span> <span class="p">});</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>함수 키워드 앞에 async를 붙이고, promise 객체 앞에 await를 붙인다. 이제 함수는 해당 프로미스가 resolve될 때 까지 기다린 뒤 다음 로직으로 넘어 간다.</p>
+
+<p>해당 문법과 예외처리를 함께하는 패턴은 <code class="language-plaintext highlighter-rouge">try - catch</code> 와 함께 쓰는 것이다.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">findAndSaveUser</span> <span class="o">=</span> <span class="k">async</span> <span class="p">(</span><span class="nx">User</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">try</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">user</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">User</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({});</span>
+    <span class="nx">user</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">you</span><span class="dl">"</span><span class="p">;</span>
+    <span class="nx">user</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">user</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+    <span class="nx">user</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">User</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({</span> <span class="na">gender</span><span class="p">:</span> <span class="dl">"</span><span class="s2">m</span><span class="dl">"</span> <span class="p">});</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>for문과 async / await을 같이 써서 프로미스를 순차적으로 실행할 수 있다. for문과 함께 쓰는 것은 노드 10 버전부터 지원하는 es2018부터이다.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">promise1</span> <span class="o">=</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="dl">"</span><span class="s2">성공 1</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">promise2</span> <span class="o">=</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="dl">"</span><span class="s2">성공 2</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="k">await</span> <span class="p">(</span><span class="nx">promise</span> <span class="k">of</span> <span class="p">[</span><span class="nx">promise1</span><span class="p">,</span> <span class="nx">promise2</span><span class="p">])</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">promise</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">})();</span>
+</code></pre></div></div>
+
+<p>위 코드는 for await of 문을 사용해서 프로미스 배열을 순회하는 코드이다. async 함수의 반환값은 항상 Promise로 감싸진다. 따라서 실행 후 then을 붙이거나 또 다른 async 함수 안에서 await을 붙여서 처리할 수 있다.</p>
+
+<p>혼용해서 사용하면 아래와 같이 할 수도 있겠다.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">findAndSaveUser</span> <span class="o">=</span> <span class="k">async</span><span class="p">(</span><span class="nx">User</span><span class="p">)</span> <span class="p">{</span>
+	<span class="cm">/* define */</span>
+<span class="p">}</span>
+
+<span class="c1">// 다른 곳에서 호출</span>
+
+<span class="c1">// method 1</span>
+<span class="nx">findAndUser</span><span class="p">(</span><span class="nx">Users</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+	<span class="cm">/* do something */</span>
+<span class="p">})</span>
+
+<span class="c1">//method 2</span>
+<span class="k">async</span> <span class="kd">function</span> <span class="nx">other</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">findAndSaveUser</span><span class="p">(</span><span class="nx">User</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong><a href="길벗, 2021">Node.js 교과서 개정 2판</a>을 학습하고 개인 학습용으로 정리한 내용입니다.</strong></p>
+:ET

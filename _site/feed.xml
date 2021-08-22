@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://itsbeenalongday.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://itsbeenalongday.github.io//" rel="alternate" type="text/html" /><updated>2021-08-22T20:19:47+09:00</updated><id>https://itsbeenalongday.github.io//feed.xml</id><title type="html">지식 흡입기</title><subtitle>유성민 기술 블로그</subtitle><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><entry><title type="html">3.3 노드 내장 객체 알아보기</title><link href="https://itsbeenalongday.github.io//node.js/3.3-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/" rel="alternate" type="text/html" title="3.3 노드 내장 객체 알아보기" /><published>2021-08-22T00:00:00+09:00</published><updated>2021-08-22T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//node.js/3.3%20%EB%85%B8%EB%93%9C%20%EB%82%B4%EC%9E%A5%20%EA%B0%9D%EC%B2%B4%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0</id><content type="html" xml:base="https://itsbeenalongday.github.io//node.js/3.3-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/">&lt;h1 id=&quot;33-노드-내장-객체-알아보기&quot;&gt;3.3 노드 내장 객체 알아보기&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://itsbeenalongday.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://itsbeenalongday.github.io//" rel="alternate" type="text/html" /><updated>2021-08-22T20:59:59+09:00</updated><id>https://itsbeenalongday.github.io//feed.xml</id><title type="html">지식 흡입기</title><subtitle>유성민 기술 블로그</subtitle><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><entry><title type="html">3.4 노드 내장 모듈 사용하기</title><link href="https://itsbeenalongday.github.io//node.js/3.4-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="3.4 노드 내장 모듈 사용하기" /><published>2021-08-22T00:00:00+09:00</published><updated>2021-08-22T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//node.js/3.4%20%EB%85%B8%EB%93%9C%20%EB%82%B4%EC%9E%A5%20%EB%AA%A8%EB%93%88%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0</id><content type="html" xml:base="https://itsbeenalongday.github.io//node.js/3.4-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/"></content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Node.js" /><category term="Node.js" /><category term="theory" /><summary type="html"></summary></entry><entry><title type="html">3.1 REPL 사용하기</title><link href="https://itsbeenalongday.github.io//node.js/3.1-REPL-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="3.1 REPL 사용하기" /><published>2021-08-22T00:00:00+09:00</published><updated>2021-08-22T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//node.js/3.1%20REPL%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0</id><content type="html" xml:base="https://itsbeenalongday.github.io//node.js/3.1-REPL-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">&lt;p&gt;자바스크립트는 스크립트 언어이므로 미리 컴파일을 하지 않아도 즉석에서 코드를 실행할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;노드도 콘솔을 제공하는데, 입력한 코드를 읽고(Read), 해석하고(Eval), 결과물을 출력하고(Print), 종료 시 까지 반복한다.(Loop)라고 해서 REPL이라고 부른다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://itsbeenalongday.github.io//assets/images/node.js/3.1.1.jpg&quot; alt=&quot;3.1.1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;노드의 REPL을 사용해보자 터미널에 node라고 치면 실행가능하다. 또한 node file.js 이런 식으로 파일 실행도 가능하다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.&lt;/strong&gt;&lt;/p&gt;</content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Node.js" /><category term="Node.js" /><category term="theory" /><summary type="html">자바스크립트는 스크립트 언어이므로 미리 컴파일을 하지 않아도 즉석에서 코드를 실행할 수 있다.</summary></entry><entry><title type="html">3.2 모듈로 만들기</title><link href="https://itsbeenalongday.github.io//node.js/3.2-%EB%AA%A8%EB%93%88%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="alternate" type="text/html" title="3.2 모듈로 만들기" /><published>2021-08-22T00:00:00+09:00</published><updated>2021-08-22T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//node.js/3.2%20%EB%AA%A8%EB%93%88%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0</id><content type="html" xml:base="https://itsbeenalongday.github.io//node.js/3.2-%EB%AA%A8%EB%93%88%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/">&lt;p&gt;노드는 코드를 모듈로 만들 수 있다는 점에서 브라우저의 자바스크립트와 다르다.&lt;/p&gt;
+
+&lt;p&gt;모듈이란 특정한 기능을 하는 함수나 변수들의 집합니다.&lt;/p&gt;
+
+&lt;p&gt;예를 들면 수학에 관련된 코드들만 모아서 모듈을 하나 만들 수 있다.&lt;/p&gt;
+
+&lt;p&gt;모듈은 자체로도 하나의 프로그램이면서 다른 프로그램의 부품으로도 사용할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;모듈로 만들어두면 여러 프로그램에 해당 모듈을 재사용할 수 있다. 자바스크립트에서 코드를 재사용하기 위해 함수로 만드는 것과 비슷하다.&lt;/p&gt;
+
+&lt;p&gt;보통 파일하나가 모듈하나를 구성한다. 파일별로 코드를 모듈화할 수 있어 관리하기 편하다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://itsbeenalongday.github.io//assets/images/node.js/3.2.1.jpg&quot; alt=&quot;3.2.1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note ≡ 브라우저의 모듈&lt;/p&gt;
+
+&lt;p&gt;2015년 자바스크립트에도 import/export라는 모듈 개념이 도입되었지만, 브라우저에는 구현되지 않아서 사용할 수 없었습니다. 크롬 60 버전부터 드디어 브라우저에서도 모듈을 사용할 수 있게 되었습니다. 앞으로 더 많은 브라우저가 모듈 시스템을 지원할 것으로 보입니다.&lt;/p&gt;
+
+&lt;p&gt;이제 모듈을 만들어 보자 모듈을 만들 때는 모듈이 될 파일과 모듈을 불러와서 사용할 파일이 필요하다.&lt;/p&gt;
+
+&lt;p&gt;사용될 키워드는 module.exports와 require이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/* var.js */&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;odd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;홀수 입니다.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;even&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;짝수 입니다.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// module화 하기, 내보내기&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;odd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;even&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/* func.js */&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;odd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;even&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./var&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 모듈 불러오기&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;checkOddEven&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;odd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;even&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;checkOddEven&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 모듈에는 객체만 대입할 수 있는게 아닌, 함수나 변수를 대입해도 무방하다.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/* index.js */&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;checkOddEven&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./func&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;checkOddEven&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9c892c1-de46-432f-a2d9-b80b0cb80c57/Untitled.png&quot; alt=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9c892c1-de46-432f-a2d9-b80b0cb80c57/Untitled.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;모듈 하나가 여러 개의 모듈을 사용할 수도 있다. 반대로 모듈 하나가 여러개의 모듈에서 사용될 수 있다.&lt;/p&gt;
+
+&lt;p&gt;모듈로부터 값을 불러올 때 변수이름을 달리 지정할 수도 있다.&lt;/p&gt;
+
+&lt;p&gt;그럼 어떤 경우에 모듈화를 하면 좋은가?라고 묻는다면 여러 파일에 걸쳐 재사용되는 함수나 변수를 모듈로 만들어두면 편리하다.&lt;/p&gt;
+
+&lt;p&gt;그러나 모듈이 많아지고 모듈 간의 관계가 얽히게 되면 구조를 파악하기 어렵다는 단점도 있다.&lt;/p&gt;
+
+&lt;p&gt;노드에서는 대부분의 파일이 다른 파일을 모듈로 사용하고 있으므로 모듈을 만들고 사용하는 방법은 꼭 알아두자&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;import, export&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;escript6 부터 자바스크립트도 자체 모듈 시스템 문법이 생겼다. 이 문법은 노드의 모듈 시스템과 조금 다르다.&lt;/p&gt;
+
+&lt;p&gt;require, module.exports → import, export default로 바꾸었다. 상당한 부분에서 차이가 있고, 단순히 키워드만 바꾼다고 작동하지는 않는다.&lt;/p&gt;
+
+&lt;p&gt;노드에서도 9 버전 부터 es6의 모듈 시스템을 사용할 수 있다. 하지만 파일의 확장자를 mjs로 지정해야하는 제한사항이 따른다. mjs 확장자 대신 js 확장자를 사용하면서 es6 모듈 문법을 사용하려면 package.jsondp type:”module”을 넣으면 된다. 근데 이거는 typescript와 충돌이 난다.&lt;/p&gt;
+
+&lt;p&gt;require나 module 객체는 달리 선언한 적이 없는데 어떻게 사용이 가능할까? 정답은 노드에서 기본적으로 제공하는 내장 객체 때문이다. 다음으로는 내장 객체에 대해 자세히 알아보자&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.&lt;/strong&gt;&lt;/p&gt;</content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Node.js" /><category term="Node.js" /><category term="theory" /><summary type="html">노드는 코드를 모듈로 만들 수 있다는 점에서 브라우저의 자바스크립트와 다르다.</summary></entry><entry><title type="html">3.3 노드 내장 객체 알아보기</title><link href="https://itsbeenalongday.github.io//node.js/3.3-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/" rel="alternate" type="text/html" title="3.3 노드 내장 객체 알아보기" /><published>2021-08-22T00:00:00+09:00</published><updated>2021-08-22T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//node.js/3.3%20%EB%85%B8%EB%93%9C%20%EB%82%B4%EC%9E%A5%20%EA%B0%9D%EC%B2%B4%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0</id><content type="html" xml:base="https://itsbeenalongday.github.io//node.js/3.3-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/">&lt;h1 id=&quot;33-노드-내장-객체-알아보기&quot;&gt;3.3 노드 내장 객체 알아보기&lt;/h1&gt;
 
 &lt;p&gt;노드에서는 기본적인 내장 객체와 내장 모듈을 제공한다.&lt;/p&gt;
 
@@ -202,7 +285,7 @@
 
 &lt;p&gt;즉, module.exports === exports ⇒ true이다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://thebook.io/img/080229/104.jpg&quot; alt=&quot;https://thebook.io/img/080229/104.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://itsbeenalongday.github.io//assets/images/node.js/3.3.1.jpg&quot; alt=&quot;3.3.1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;❗주의&lt;/p&gt;
 
@@ -276,7 +359,7 @@
 
 &lt;p&gt;우선권의 이점때문에 비동기 처리를 할 때 setImmediate보다 process.nextTick을 더 선호하는 개발자들도 있지만, 이로 인해 우선순위가 낮은 콜백들의 starvation이 발생할 수 있으니 주의하자.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;3%203%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%82%E1%85%A2%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%80%E1%85%A2%E1%86%A8%E1%84%8E%E1%85%A6%20%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%8B%E1%85%A1%E1%84%87%E1%85%A9%E1%84%80%E1%85%B5%2063bae82f5ef4470cbf96691430f78751/Untitled.png&quot; alt=&quot;Untitled&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://itsbeenalongday.github.io//assets/images/node.js/3.3.2.png&quot; alt=&quot;3.3.2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;(3) process.exit(종료 코드)&lt;/p&gt;
 
@@ -284,99 +367,7 @@
 
 &lt;p&gt;종료 코드로는 0과 1이 있는데 0은 정상 종료, 1은 에러로 인한 비정상 종료를 의미하기에 상황에 따라 적절한 코드를 주면 되겠다.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.&lt;/strong&gt;&lt;/p&gt;</content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Node.js" /><category term="Node.js" /><category term="theory" /><summary type="html">3.3 노드 내장 객체 알아보기</summary></entry><entry><title type="html">3.1 REPL 사용하기</title><link href="https://itsbeenalongday.github.io//node.js/3.1-REPL-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="3.1 REPL 사용하기" /><published>2021-08-22T00:00:00+09:00</published><updated>2021-08-22T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//node.js/3.1%20REPL%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0</id><content type="html" xml:base="https://itsbeenalongday.github.io//node.js/3.1-REPL-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">&lt;p&gt;자바스크립트는 스크립트 언어이므로 미리 컴파일을 하지 않아도 즉석에서 코드를 실행할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;노드도 콘솔을 제공하는데, 입력한 코드를 읽고(Read), 해석하고(Eval), 결과물을 출력하고(Print), 종료 시 까지 반복한다.(Loop)라고 해서 REPL이라고 부른다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://thebook.io/img/080229/090.jpg&quot; alt=&quot;https://thebook.io/img/080229/090.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;노드의 REPL을 사용해보자 터미널에 node라고 치면 실행가능하다. 또한 node file.js 이런 식으로 파일 실행도 가능하다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.&lt;/strong&gt;&lt;/p&gt;</content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Node.js" /><category term="Node.js" /><category term="theory" /><summary type="html">자바스크립트는 스크립트 언어이므로 미리 컴파일을 하지 않아도 즉석에서 코드를 실행할 수 있다.</summary></entry><entry><title type="html">3.2 모듈로 만들기</title><link href="https://itsbeenalongday.github.io//node.js/3.2-%EB%AA%A8%EB%93%88%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="alternate" type="text/html" title="3.2 모듈로 만들기" /><published>2021-08-22T00:00:00+09:00</published><updated>2021-08-22T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//node.js/3.2%20%EB%AA%A8%EB%93%88%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0</id><content type="html" xml:base="https://itsbeenalongday.github.io//node.js/3.2-%EB%AA%A8%EB%93%88%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/">&lt;p&gt;노드는 코드를 모듈로 만들 수 있다는 점에서 브라우저의 자바스크립트와 다르다.&lt;/p&gt;
-
-&lt;p&gt;모듈이란 특정한 기능을 하는 함수나 변수들의 집합니다.&lt;/p&gt;
-
-&lt;p&gt;예를 들면 수학에 관련된 코드들만 모아서 모듈을 하나 만들 수 있다.&lt;/p&gt;
-
-&lt;p&gt;모듈은 자체로도 하나의 프로그램이면서 다른 프로그램의 부품으로도 사용할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;모듈로 만들어두면 여러 프로그램에 해당 모듈을 재사용할 수 있다. 자바스크립트에서 코드를 재사용하기 위해 함수로 만드는 것과 비슷하다.&lt;/p&gt;
-
-&lt;p&gt;보통 파일하나가 모듈하나를 구성한다. 파일별로 코드를 모듈화할 수 있어 관리하기 편하다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://thebook.io/img/080229/093.jpg&quot; alt=&quot;https://thebook.io/img/080229/093.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Note ≡ 브라우저의 모듈&lt;/p&gt;
-
-&lt;p&gt;2015년 자바스크립트에도 import/export라는 모듈 개념이 도입되었지만, 브라우저에는 구현되지 않아서 사용할 수 없었습니다. 크롬 60 버전부터 드디어 브라우저에서도 모듈을 사용할 수 있게 되었습니다. 앞으로 더 많은 브라우저가 모듈 시스템을 지원할 것으로 보입니다.&lt;/p&gt;
-
-&lt;p&gt;이제 모듈을 만들어 보자 모듈을 만들 때는 모듈이 될 파일과 모듈을 불러와서 사용할 파일이 필요하다.&lt;/p&gt;
-
-&lt;p&gt;사용될 키워드는 module.exports와 require이다.&lt;/p&gt;
-
-&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/* var.js */&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;odd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;홀수 입니다.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;even&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;짝수 입니다.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// module화 하기, 내보내기&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;odd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;even&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/* func.js */&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;odd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;even&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./var&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 모듈 불러오기&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;checkOddEven&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;odd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;even&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;checkOddEven&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 모듈에는 객체만 대입할 수 있는게 아닌, 함수나 변수를 대입해도 무방하다.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/* index.js */&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;checkOddEven&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./func&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;checkOddEven&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9c892c1-de46-432f-a2d9-b80b0cb80c57/Untitled.png&quot; alt=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9c892c1-de46-432f-a2d9-b80b0cb80c57/Untitled.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;모듈 하나가 여러 개의 모듈을 사용할 수도 있다. 반대로 모듈 하나가 여러개의 모듈에서 사용될 수 있다.&lt;/p&gt;
-
-&lt;p&gt;모듈로부터 값을 불러올 때 변수이름을 달리 지정할 수도 있다.&lt;/p&gt;
-
-&lt;p&gt;그럼 어떤 경우에 모듈화를 하면 좋은가?라고 묻는다면 여러 파일에 걸쳐 재사용되는 함수나 변수를 모듈로 만들어두면 편리하다.&lt;/p&gt;
-
-&lt;p&gt;그러나 모듈이 많아지고 모듈 간의 관계가 얽히게 되면 구조를 파악하기 어렵다는 단점도 있다.&lt;/p&gt;
-
-&lt;p&gt;노드에서는 대부분의 파일이 다른 파일을 모듈로 사용하고 있으므로 모듈을 만들고 사용하는 방법은 꼭 알아두자&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;import, export&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;escript6 부터 자바스크립트도 자체 모듈 시스템 문법이 생겼다. 이 문법은 노드의 모듈 시스템과 조금 다르다.&lt;/p&gt;
-
-&lt;p&gt;require, module.exports → import, export default로 바꾸었다. 상당한 부분에서 차이가 있고, 단순히 키워드만 바꾼다고 작동하지는 않는다.&lt;/p&gt;
-
-&lt;p&gt;노드에서도 9 버전 부터 es6의 모듈 시스템을 사용할 수 있다. 하지만 파일의 확장자를 mjs로 지정해야하는 제한사항이 따른다. mjs 확장자 대신 js 확장자를 사용하면서 es6 모듈 문법을 사용하려면 package.jsondp type:”module”을 넣으면 된다. 근데 이거는 typescript와 충돌이 난다.&lt;/p&gt;
-
-&lt;p&gt;require나 module 객체는 달리 선언한 적이 없는데 어떻게 사용이 가능할까? 정답은 노드에서 기본적으로 제공하는 내장 객체 때문이다. 다음으로는 내장 객체에 대해 자세히 알아보자&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.&lt;/strong&gt;&lt;/p&gt;</content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Node.js" /><category term="Node.js" /><category term="theory" /><summary type="html">노드는 코드를 모듈로 만들 수 있다는 점에서 브라우저의 자바스크립트와 다르다.</summary></entry><entry><title type="html">1.3 서버 외의 노드</title><link href="https://itsbeenalongday.github.io//node.js/1.3-%EC%84%9C%EB%B2%84-%EC%99%B8%EC%9D%98-%EB%85%B8%EB%93%9C/" rel="alternate" type="text/html" title="1.3 서버 외의 노드" /><published>2021-08-01T00:00:00+09:00</published><updated>2021-08-01T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//node.js/1.3%20%EC%84%9C%EB%B2%84%20%EC%99%B8%EC%9D%98%20%EB%85%B8%EB%93%9C</id><content type="html" xml:base="https://itsbeenalongday.github.io//node.js/1.3-%EC%84%9C%EB%B2%84-%EC%99%B8%EC%9D%98-%EB%85%B8%EB%93%9C/">&lt;h1 id=&quot;13-서버-외의-노드&quot;&gt;1.3 서버 외의 노드&lt;/h1&gt;
-
-&lt;p&gt;처음에는 노드를 대부분 서버로 사용했지만, 노드는 자바스크립트 런타임이므로 용도가 서버에만 한정 되지 않는다.
-사용범위가 점점 늘어나서 노드는 웹, 모바일, 데스크톱 애플리케이션 개발에도 사용되기 시작하였다.&lt;/p&gt;
-
-&lt;p&gt;노드 기반으로 돌아가는 대표적인 웹 프레임워크로는 앵귤러, 리액트, 리액트 네이티브, 뷰 등이 있다.&lt;/p&gt;
-
-&lt;p&gt;데스크톱 개발 도구로는 일렉트론이 대표적인데, 이걸로 만들어진 프로그램으로는 vscode, atom, slack, discord 등이 있다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.&lt;/strong&gt;&lt;/p&gt;</content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Node.js" /><category term="Node.js" /><category term="theory" /><summary type="html">1.3 서버 외의 노드</summary></entry><entry><title type="html">1.4 개발 환경 설정</title><link href="https://itsbeenalongday.github.io//node.js/1.4-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/" rel="alternate" type="text/html" title="1.4 개발 환경 설정" /><published>2021-08-01T00:00:00+09:00</published><updated>2021-08-01T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//node.js/1.4%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95</id><content type="html" xml:base="https://itsbeenalongday.github.io//node.js/1.4-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/">&lt;h1 id=&quot;14-개발-환경-설정하기&quot;&gt;1.4 개발 환경 설정하기&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.&lt;/strong&gt;&lt;/p&gt;</content><author><name>유성민</name><email>mailto:dbtjdals1771@ajou.ac.kr</email></author><category term="Node.js" /><category term="Node.js" /><category term="theory" /><summary type="html">3.3 노드 내장 객체 알아보기</summary></entry><entry><title type="html">1.4 개발 환경 설정</title><link href="https://itsbeenalongday.github.io//node.js/1.4-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/" rel="alternate" type="text/html" title="1.4 개발 환경 설정" /><published>2021-08-01T00:00:00+09:00</published><updated>2021-08-01T00:00:00+09:00</updated><id>https://itsbeenalongday.github.io//node.js/1.4%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95</id><content type="html" xml:base="https://itsbeenalongday.github.io//node.js/1.4-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/">&lt;h1 id=&quot;14-개발-환경-설정하기&quot;&gt;1.4 개발 환경 설정하기&lt;/h1&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Node 설치&lt;/li&gt;
@@ -934,38 +925,151 @@ author_profile: true # 좌측의 유저 프로필
     
       &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;page-title&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;page__title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;할 일 목록&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;현재-내-자신을-알라-난-앞으로-무엇을-해야하는가&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;현재 내 자신을 알라, 난 앞으로 무엇을 해야하는가?&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;스스로 사용가능한 프레임워크로 만들 것들
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;notion에서 블로그로 이전 중
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.notion.so/2dea05ff8414445e88c25cc3674b9bca?v=64baa4f0b9d54453be3708b517355103&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Notion&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Backend
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Rails&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Nest&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Front
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;React&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;running&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Running&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;스스로-사용-가능이라-함은-혼자서-cli환경-구축하고-프로젝트를-시작할-수-있어야-함&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;스스로 사용 가능이라 함은 혼자서 cli환경 구축하고 프로젝트를 시작할 수 있어야 함&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
 
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;checked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checked&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;React&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;checked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checked&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;Rails&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;checked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checked&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;NestJs&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;checked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checked&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;Jeklly github.io notion 연동&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;checked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checked&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;PS&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;어느-주제의-도메인이-주어-지더라도-머리에-아키텍쳐-청사진이-대강은-그려지는-정도&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;어느 주제의 도메인이 주어 지더라도 머리에 아키텍쳐 청사진이 대강은 그려지는 정도&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;계획하고 있는 이론 공부
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Node.js 교과서(챕터 16까지 있다!)
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;1-8&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;9-16&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;종만북(1, 2, 3, 5, 6, 7 챕터)에서 대회용 알고리즘 말고 코딩테스트에 나오는 알고리즘들만 읽기
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;대회알고는 읽으면 좋겠다만, 알고리즘에만 투자할 순 없으니…&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;바킹독 알고 강의
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;현재는 12강까지 올라와있는 상태&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;자바스크립트(모던 자바스크립트 튜토리얼)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;타입스크립트(한글 도큐)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;NestJs 강의(제로초)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;http 정리하기(인프런 김영한)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;위상 정렬해보면(우선 내림차순)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;노드 교과서 ⇒ Nest.js&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;자바스크립트 ⇒ 타입스크립트&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;바킹독 알고강의 ⇒ 종만북&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;당장 사용 가능 언어(리마인드 안 해도 되는 언어)
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;c / c++&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;python&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;javascript + typescript&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;ruby&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;사용 경험은 있으나 자신 없거나 리마인드 해야하는 언어
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;shell script&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;java&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;cs
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;주제를 들으면 아 그거였지 하는 정도는 기억이 나나 디테일하게 기억나지 않음&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;운영체제, 컴퓨터 구조, 데이터 베이스, 자료구조, 알고리즘, 컴퓨터 네트워크 정도만 복습하면 될듯?&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;우선 순위&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;데이터 베이스&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;운영체제&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;컴퓨터 네트워크&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;자구 / 알고&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;컴구&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;algorithm
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;내 구현력을 끌어 올려준 것은 알고리즘임을 잊지말길, 물론 학교 극헬과제도 있었지만&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;문제해결능력이나 구현력, 사고력 증진에 ps는 굉장히 큰 도움이 됨&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;지금은 퇴물이 되어버렸기에 바킹독 알고리즘 강의와 종만북 보면서 알고리즘 리뷰하고 이번에는 하루 한문제 풀더라도 꾸준히 감유지하기&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wait&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Wait&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;급할-수록-돌아가라&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;급할 수록 돌아가라&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
 
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;Crawling&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;7월에는 노마드로 기초 개념, 유튜브 강의(제로초) 보면서 NestJs 빡시게 익히기 + 게시판 토이 플젝
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;checked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checked&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;7월 둘째 주 주말에 노마드 끝내고 제로초 강의 시작&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;http 리뷰(김영한 강의)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;유튜브 제로초 강의 7월 넷째 주까지 끝내기&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;제로초 시작하면서 토이 플젝 슬슬 시작(7월 셋째 주)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;틈틈히 타입스크립트 고도화 시키기(한글 도큐사이트로 공부해도 충분할 듯?)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;8월에는  Node.js 교과서(express에 관한 서적이지만 nest는 Express 위에서 돌아간다!)로 고도화 시키기
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;본 네스트&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;다른 토이 플젝(주제는 생각해보기)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;9월에도 Node.js 교과서 읽으면서 미들급 석권&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;10월&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;11월&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;12월&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ready&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Ready&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;process-queue---------------------------&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Process Queue [    |    |    |     |     |    ]&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
 
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;CS review&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;CI / CD&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;task-list-item-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disabled&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;notion webhook 하나 만들까? 일일이 하는거 귀찮&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.notion.so/016ede14f6c145a6bca57b544a9bb717&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Process Queue in Sungmin OS&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;DevOps roadmap&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://github.com/kamranahmedse/developer-roadmap/raw/master/img/devops.png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://github.com/kamranahmedse/developer-roadmap/raw/master/img/devops.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Backend roadmap&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://github.com/kamranahmedse/developer-roadmap/raw/master/img/backend.png?year-2021-2&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://github.com/kamranahmedse/developer-roadmap/raw/master/img/backend.png?year-2021-2&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Frontend roadmap&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://github.com/kamranahmedse/developer-roadmap/raw/master/img/frontend.png?year-2021-2&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://github.com/kamranahmedse/developer-roadmap/raw/master/img/frontend.png?year-2021-2&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;new&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;New&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;terminal&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Terminal&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
 
 
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;taxonomy__index&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -973,7 +1077,7 @@ author_profile: true # 좌측의 유저 프로필
   
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
       &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#2021&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;2021&lt;span class=&quot;nt&quot;&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;taxonomy__count&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;13&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;2021&lt;span class=&quot;nt&quot;&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;taxonomy__count&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;14&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
       &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
   
@@ -995,6 +1099,46 @@ author_profile: true # 좌측의 유저 프로필
     
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-title no_toc&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;headline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
       
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/node.js/3.4-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;permalink&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;3.4 노드 내장 모듈 사용하기
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+      
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;page__meta&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    
+
+    
+
+    
+      
+      
+
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;page__meta-readtime&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;far fa-clock&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-hidden=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
+        
+          최대 1 분 소요
+        
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-excerpt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+      
+        
+
+
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;list__item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;article&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemscope&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemtype=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://schema.org/CreativeWork&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-title no_toc&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;headline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/node.js/3.3-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;permalink&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;3.3 노드 내장 객체 알아보기
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
       
@@ -1495,17 +1639,14 @@ author_profile: true # 좌측의 유저 프로필
       &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;page__meta-readtime&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;far fa-clock&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-hidden=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
         
-          최대 1 분 소요
+          1 분 소요
         
       &lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
     
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 
 
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-excerpt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  notion에서 블로그로 이전 중
-Notion
-
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-excerpt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;현재 내 자신을 알라, 난 앞으로 무엇을 해야하는가?
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
@@ -1525,7 +1666,7 @@ Notion
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#2021&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
       &lt;span class=&quot;nt&quot;&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;2021&lt;span class=&quot;nt&quot;&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;taxonomy__count&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;13&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;taxonomy__count&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;14&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
   
@@ -1536,6 +1677,44 @@ Notion
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__subtitle&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;2021&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;entries-list&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
      
+
+
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;list__item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;article&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemscope&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemtype=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://schema.org/CreativeWork&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-title no_toc&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;headline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/node.js/3.4-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;permalink&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;3.4 노드 내장 모듈 사용하기
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+      
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;page__meta&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    
+
+    
+
+    
+      
+      
+
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;page__meta-readtime&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;far fa-clock&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-hidden=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
+        
+          최대 1 분 소요
+        
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-excerpt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  
 
 
 
@@ -2020,17 +2199,14 @@ Notion
       &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;page__meta-readtime&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;far fa-clock&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-hidden=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
         
-          최대 1 분 소요
+          1 분 소요
         
       &lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
     
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 
 
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-excerpt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  notion에서 블로그로 이전 중
-Notion
-
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;archive__item-excerpt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemprop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;현재 내 자신을 알라, 난 앞으로 무엇을 해야하는가?
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;

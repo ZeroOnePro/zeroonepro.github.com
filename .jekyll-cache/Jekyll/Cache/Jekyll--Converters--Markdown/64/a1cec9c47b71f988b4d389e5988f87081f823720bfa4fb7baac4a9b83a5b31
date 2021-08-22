@@ -1,0 +1,10 @@
+I"�<p>자바스크립트는 스크립트 언어이므로 미리 컴파일을 하지 않아도 즉석에서 코드를 실행할 수 있다.</p>
+
+<p>노드도 콘솔을 제공하는데, 입력한 코드를 읽고(Read), 해석하고(Eval), 결과물을 출력하고(Print), 종료 시 까지 반복한다.(Loop)라고 해서 REPL이라고 부른다.</p>
+
+<p><img src="https://itsbeenalongday.github.io//assets/images/node.js/3.1.1.jpg" alt="3.1.1" /></p>
+
+<p>노드의 REPL을 사용해보자 터미널에 node라고 치면 실행가능하다. 또한 node file.js 이런 식으로 파일 실행도 가능하다.</p>
+
+<p><strong>(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.</strong></p>
+:ET

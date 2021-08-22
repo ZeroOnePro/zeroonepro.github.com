@@ -1,6 +1,6 @@
 var store = [{
         "title": "할 일 목록",
-        "excerpt":"   notion에서 블로그로 이전 중 Notion   Running      React   Rails   NestJs   Jeklly github.io notion 연동   PS   Wait      Crawling   Ready      CS review   CI / CD   notion webhook 하나 만들까? 일일이 하는거 귀찮   New   Terminal  ","categories": ["To do"],
+        "excerpt":"현재 내 자신을 알라, 난 앞으로 무엇을 해야하는가? 스스로 사용가능한 프레임워크로 만들 것들 Backend Rails Nest Front React 스스로 사용 가능이라 함은 혼자서 cli환경 구축하고 프로젝트를 시작할 수 있어야 함 어느 주제의 도메인이 주어 지더라도 머리에 아키텍쳐 청사진이 대강은 그려지는 정도 계획하고 있는 이론 공부 Node.js 교과서(챕터 16까지 있다!) 1-8...","categories": ["To do"],
         "tags": ["To do","Road map"],
         "url": "/to%20do/%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/",
         "teaser": null
@@ -75,5 +75,11 @@ var store = [{
         "excerpt":"3.3 노드 내장 객체 알아보기 노드에서는 기본적인 내장 객체와 내장 모듈을 제공한다. 따로 설치하지 않아도 가능하고, 브라우저의 window 객체와 유사하다. 3.3.1) global global 객체는 전역 객체로써 브라우저의 window와 비슷하다. 전역 객체이므로 모든 파일에서 접근할 수 있다. 또한, window.open 메서드를 window를 생략하고 open으로 호출 할 수 있는 것 처럼 global도 생략...","categories": ["Node.js"],
         "tags": ["Node.js","theory"],
         "url": "/node.js/3.3-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/",
+        "teaser": null
+      },{
+        "title": "3.4 노드 내장 모듈 사용하기",
+        "excerpt":" ","categories": ["Node.js"],
+        "tags": ["Node.js","theory"],
+        "url": "/node.js/3.4-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/",
         "teaser": null
       }]

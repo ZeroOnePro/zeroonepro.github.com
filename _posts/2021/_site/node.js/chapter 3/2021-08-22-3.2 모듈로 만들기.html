@@ -1,0 +1,76 @@
+<p>노드는 코드를 모듈로 만들 수 있다는 점에서 브라우저의 자바스크립트와 다르다.</p>
+
+<p>모듈이란 특정한 기능을 하는 함수나 변수들의 집합니다.</p>
+
+<p>예를 들면 수학에 관련된 코드들만 모아서 모듈을 하나 만들 수 있다.</p>
+
+<p>모듈은 자체로도 하나의 프로그램이면서 다른 프로그램의 부품으로도 사용할 수 있다.</p>
+
+<p>모듈로 만들어두면 여러 프로그램에 해당 모듈을 재사용할 수 있다. 자바스크립트에서 코드를 재사용하기 위해 함수로 만드는 것과 비슷하다.</p>
+
+<p>보통 파일하나가 모듈하나를 구성한다. 파일별로 코드를 모듈화할 수 있어 관리하기 편하다.</p>
+
+<p><img src="/assets/images/node.js/3.2.1.jpg" alt="3.2.1" /></p>
+
+<p>Note ≡ 브라우저의 모듈</p>
+
+<p>2015년 자바스크립트에도 import/export라는 모듈 개념이 도입되었지만, 브라우저에는 구현되지 않아서 사용할 수 없었습니다. 크롬 60 버전부터 드디어 브라우저에서도 모듈을 사용할 수 있게 되었습니다. 앞으로 더 많은 브라우저가 모듈 시스템을 지원할 것으로 보입니다.</p>
+
+<p>이제 모듈을 만들어 보자 모듈을 만들 때는 모듈이 될 파일과 모듈을 불러와서 사용할 파일이 필요하다.</p>
+
+<p>사용될 키워드는 module.exports와 require이다.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* var.js */</span>
+<span class="kd">const</span> <span class="nx">odd</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">홀수 입니다.</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">even</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">짝수 입니다.</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">// module화 하기, 내보내기</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">odd</span><span class="p">,</span>
+  <span class="nx">even</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* func.js */</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">odd</span><span class="p">,</span> <span class="nx">even</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">./var</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// 모듈 불러오기</span>
+
+<span class="kd">function</span> <span class="nx">checkOddEven</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">odd</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">even</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">checkOddEven</span><span class="p">;</span> <span class="c1">// 모듈에는 객체만 대입할 수 있는게 아닌, 함수나 변수를 대입해도 무방하다.</span>
+</code></pre></div></div>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* index.js */</span>
+
+<span class="kd">const</span> <span class="nx">checkOddEven</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">./func</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">checkOddEven</span><span class="p">(</span><span class="mi">10</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9c892c1-de46-432f-a2d9-b80b0cb80c57/Untitled.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9c892c1-de46-432f-a2d9-b80b0cb80c57/Untitled.png" /></p>
+
+<p>모듈 하나가 여러 개의 모듈을 사용할 수도 있다. 반대로 모듈 하나가 여러개의 모듈에서 사용될 수 있다.</p>
+
+<p>모듈로부터 값을 불러올 때 변수이름을 달리 지정할 수도 있다.</p>
+
+<p>그럼 어떤 경우에 모듈화를 하면 좋은가?라고 묻는다면 여러 파일에 걸쳐 재사용되는 함수나 변수를 모듈로 만들어두면 편리하다.</p>
+
+<p>그러나 모듈이 많아지고 모듈 간의 관계가 얽히게 되면 구조를 파악하기 어렵다는 단점도 있다.</p>
+
+<p>노드에서는 대부분의 파일이 다른 파일을 모듈로 사용하고 있으므로 모듈을 만들고 사용하는 방법은 꼭 알아두자</p>
+
+<p><code class="language-plaintext highlighter-rouge">import, export</code></p>
+
+<p>escript6 부터 자바스크립트도 자체 모듈 시스템 문법이 생겼다. 이 문법은 노드의 모듈 시스템과 조금 다르다.</p>
+
+<p>require, module.exports → import, export default로 바꾸었다. 상당한 부분에서 차이가 있고, 단순히 키워드만 바꾼다고 작동하지는 않는다.</p>
+
+<p>노드에서도 9 버전 부터 es6의 모듈 시스템을 사용할 수 있다. 하지만 파일의 확장자를 mjs로 지정해야하는 제한사항이 따른다. mjs 확장자 대신 js 확장자를 사용하면서 es6 모듈 문법을 사용하려면 package.jsondp type:”module”을 넣으면 된다. 근데 이거는 typescript와 충돌이 난다.</p>
+
+<p>require나 module 객체는 달리 선언한 적이 없는데 어떻게 사용이 가능할까? 정답은 노드에서 기본적으로 제공하는 내장 객체 때문이다. 다음으로는 내장 객체에 대해 자세히 알아보자</p>
+
+<p><strong>(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.</strong></p>

@@ -1,0 +1,50 @@
+I"�	<h1 id="14-개발-환경-설정하기">1.4 개발 환경 설정하기</h1>
+
+<ol>
+  <li>Node 설치</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># mac</span>
+<span class="nv">$ </span>brew <span class="nb">install </span>node
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># linux</span>
+
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> build-essential
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get intall curl
+<span class="nv">$ </span>curl <span class="nt">-sL</span> https://deb.nodesource.com/setup_14.x | <span class="nb">sudo</span> <span class="nt">-E</span> bash <span class="nt">--</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> nodejs
+</code></pre></div></div>
+
+<ol>
+  <li>설치 확인</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>node <span class="nt">-v</span>
+v16.4.1
+
+<span class="nv">$ </span>npm <span class="nt">-v</span>
+7.18.1
+</code></pre></div></div>
+
+<p>기본적으로 /usr/bin 또는 /usr/local/bin에 들어 있지 않으면 명령어 실행 시 에러가 발생한다</p>
+
+<p>명령어를 사용할 때 에러가 발생한다면, 환경 변수를 체크하고 등록되있지 않다면,</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 환경 변수 확인</span>
+<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$PATH</span>
+
+<span class="c"># 환경 변수에 노드 등록하기</span>
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:노드 설치 경로
+</code></pre></div></div>
+
+<ol>
+  <li>npm 업데이트</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm <span class="nb">install</span> <span class="nt">-g</span> npm
+</code></pre></div></div>
+
+<p><strong>(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.</strong></p>
+:ET

@@ -1,0 +1,240 @@
+I"�f<p><strong>이런 내장  모듈들이 있고, 어디에 쓰이는지만 기억해두자 자세한 함수는 도큐먼트 참조</strong></p>
+
+<h2 id="341-os">3.4.1) os</h2>
+
+<p>브라우저에서는 os에 관한 정보를 가져올 수 없지만, 노드는 os 모듈에 정보가 담겨있어서 가져올 수 있다.</p>
+
+<p>arch(), platform(), cpus(), homedir() 등등 다양한 함수를 활용하여 시스템 프로그래밍을 할 수 있다.</p>
+
+<p>주로 운영체제 별로 다른 서비스를 제공할 때 분기를 위해 많이 사용된다.</p>
+
+<h2 id="342-path">3.4.2) path</h2>
+
+<p>폴더와 파일의 경로를 쉽게 조작할 수 있도록 도와주는 모듈, os 별로 경로 구분자가 다르고( / 와 \ ) 파일 경로에서 파일명이나 확장자만 get하는 기능을 구현해두어 직접 구현하지 않고도 편리하게 사용가능하다.</p>
+
+<p>노드는 require.main파일을 기준으로 상대 경로를 인식하기에 require.main과는 다른 디렉터리의 파일을 다룰 때는 주의하자 path 모듈은 노드 프로그래밍을 하면서 빈번하게 쓰이기에 꼭 기억해두자.</p>
+
+<h2 id="343-url">3.4.3) url</h2>
+
+<p>인터넷 주소를 쉽게 조작하도록 돕는 모듈이다. url 처리에는 크게 두가지 방식이 있는데 노드 7버전에서 추가된 WAHTWG방식의 url과 이전부터 노드에서 사용하던 방식의 url이 있다.</p>
+
+<p><img src="/assets/images/node.js/3.4.1.png" alt="3.4.1" class="align-center open-new" /></p>
+
+<p>임의의 stirng으로 구성된 url을 위의 그림에 나와있는 WHATWG방식 표준에 따라 객체로 나타내준다.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">url</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">URL</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">url</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">someUrl</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">URL</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://www.naver.com</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="o">&gt;</span> <span class="nx">someUrl</span>
+
+<span class="p">{</span>
+ <span class="nl">href</span><span class="p">:</span> <span class="dl">"</span><span class="s2">~~~</span><span class="dl">"</span><span class="p">,</span>
+ <span class="nx">origin</span><span class="p">:</span> <span class="dl">"</span><span class="s2">~~~</span><span class="dl">"</span><span class="p">,</span>
+ <span class="nx">protocol</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http:</span><span class="dl">"</span><span class="p">,</span>
+ <span class="p">...</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>host 부분 없이 pathname 부분만 주소로 입력되는 경우는 반드시 노드의 url형식을 사용해야한다. 나머지는 취향에 따라 WHATWG의 방식이던, 노드의 방식이던 나눠서 쓰면 된다.</p>
+
+<h2 id="344-querystring">3.4.4) querystring</h2>
+
+<p>WHATWG 방식의 url 대신 기존 노드의 url을 사용할 때, search 부분을 사용하기 쉽게 객체로 만드는 모듈이다. search params를 분해하여 사용할 수 있겠다.</p>
+
+<h2 id="345-crypto">3.4.5) crypto</h2>
+
+<p>다양한 방식의 암호화를 돕는 모듈이다. 이 중 몇 가지는 익혀두면 실 서비스에도 적용가능하다. 고객의 비밀번호, 계좌 정보, 거래 내역 등등 민감한 정보의 경호 반드시 암호화를 해야하는데, 이 때 사용하면 좋을 것이다.</p>
+
+<p>(1) 단방향 암호화</p>
+
+<p>단방향 암호화란 복호화를 할 수 없는 암호화 방식을 일컫는다. 복호화 할 수 없으므로 암호화라고 표현하는 대신 해시 함수로 표현하기도 한다. 민감한 정보를 암호화해서 데이터 베이스에 저장하고, 만약 고객이 민감한 정보를 검증하려고 입력을 한다면, 입력한 데이터를 데이터 베이스에 저장할 때 사용했던 암호화 알고리즘을 사용하여 암호화한 다음 저장되있던 정보와 일치한지만 보면 된다. 해시는 어떠한 문자열을 고정된 길이의 다른 문자열로 대치하는 작업을 일컫는다.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">crypto</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">crypto</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">crypto</span><span class="p">.</span><span class="nx">createHash</span><span class="p">(</span><span class="dl">'</span><span class="s1">sha512</span><span class="dl">'</span><span class="p">).</span><span class="nx">update</span><span class="p">(</span><span class="dl">'</span><span class="s1">변환할 문자열</span><span class="dl">'</span><span class="p">).</span><span class="nx">digest</span><span class="p">(</span><span class="dl">'</span><span class="s1">base64</span><span class="dl">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>digest는 인코딩하는 함수로 base64. hex, latin1 등 다양한 기법들이 있다. 이 중 base64가 가장 짧아 애용된다. 현재는 주로 pbkdf2나 bcrypt, scrypt라는 알고리즘으로 비밀번호를 암호화한다. 그 중 노드에서 지원하는 pbkdf2에 대해 정리해보자.</p>
+
+<p>pbkdf2는 문자열에 salt라고 불리는 문자열을 붙인 후 해시알고리즘을 반복해서 적용한다. pbkdf2는 간단하지만 bcrypt나 scrypt보다 취약하므로 니중에 더 나은 보안이 필요하면 bcrypt 나 scrypt 방식을 사용하면 된다.</p>
+
+<p>(2) 양방향 암호화</p>
+
+<p>양방향 대칭형 암호화는 암호화된 문자열을 복호화할 수 있으며, 이 때, 키가 사용된다. 대칭형 암호화에서 암호를 복호화하려면 암호화할 때 사용한 키와 같은 키를 사용해야 한다. 지금까지 배운 메서드 이외에도 CIγpto 모률은 양방향 비대칭형 암호화. HMAC 등과 같은 다양 한 암호화를 제공하고 있으니 암호화가 필요하면 모률이 어떤 메서드들을 지원하는지 확인해보 면 좋습니다.</p>
+
+<ul>
+  <li>crypto 공식 문서</li>
+</ul>
+
+<p><a href="https://nodejs.org/api/crypto.html"></a>에서)</p>
+
+<p>좀 더 간단한 암호화를 원한다면 crypto-js npm 패키지를 이용하는 것도 방법이다.</p>
+
+<h2 id="346-util">3.4.6) util</h2>
+
+<p>각종 편의 기능을 모아둔 모듈</p>
+
+<p>자세한 내용은 노드 공식문서 util을 보자</p>
+
+<h2 id="347-worker_threads">3.4.7) worker_threads</h2>
+
+<p>노드에서 멀티스레딩은 worker_threads 모듈을 이용하여 구현할 수 있다.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="p">{</span>
+ <span class="nx">Worker</span><span class="p">,</span>
+ <span class="nx">isMainThread</span><span class="p">,</span>
+ <span class="nx">parentPort</span><span class="p">,</span>
+<span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">worker_threads</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="k">if</span><span class="p">(</span><span class="nx">isMainThread</span><span class="p">){</span>
+ <span class="c1">// child 생성 (worker thread)</span>
+ <span class="kd">const</span> <span class="nx">child</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Worker</span><span class="p">(</span><span class="nx">__filename</span><span class="p">);</span>
+ <span class="c1">// child message event 리스너 등록</span>
+ <span class="nx">child</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">message</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">msg</span><span class="p">));</span>
+ <span class="c1">// child exit event 리스너 등록</span>
+ <span class="nx">child</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">exit</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">child terminate</span><span class="dl">'</span><span class="p">);</span>
+ <span class="c1">// child process에 메시지 보내기</span>
+ <span class="nx">child</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">(</span><span class="dl">'</span><span class="s1">from parent</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+ <span class="nx">parentPost</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">message</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span> <span class="c1">// 부모에서 보낸 메시지 출력</span>
+  <span class="nx">parentPort</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">(</span><span class="dl">'</span><span class="s1">from child</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// 부모로 메시지 보내기</span>
+  <span class="nx">parentPort</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span> <span class="c1">// 포트 닫기</span>
+<span class="p">}</span>
+
+<span class="dl">'</span><span class="s1">from parent</span><span class="dl">'</span>
+<span class="dl">'</span><span class="s1">from child</span><span class="dl">'</span>
+<span class="dl">'</span><span class="s1">child terminate</span><span class="dl">'</span>
+</code></pre></div></div>
+
+<p>isMainThread를 통해 현재 코드가 메인 스레드(기존 동작하던 노드의 싱글 스레드)인지 아닌지 구분하는 로직을 작성할 수 있고, new Worker를 통해. 메인 스레드에서는 현재 파일(__filename)을 워커 스레드에서 실행 시킬 수 있다.</p>
+
+<p>postMessage 함수를 통해서 워커로 데이터를 보낼 수 있고, 워커 스레드에서는 parentPort.on(‘message’) 이벤트 리스너를 이용하여 메인 스레드의 메시지를 받는다. 반대로 메인 스레드에서는 worker.on(‘message’)를 이용하여 워커 스레드의 데이터를 받을 수 있다. 워커에서 on 메서드로 이벤트 리스너를 등록할 때는 직접 워커 스레드를 종료시켜야 한다는 점의 주의 하자.</p>
+
+<p>parentPort.close()를 이용하면 메인 스레드와의 연결을 종료시킬 수 있고, 이 종료에 대한 이벤트는 worker.on(‘exit’)를 통해 메인 스레드에서 catch할 수 있다.</p>
+
+<p><img src="/assets/images/node.js/3.4.2.png" alt="3.4.2" class="align-center open-new" /></p>
+
+<p>좀 더 심화해서 소수를 구하는 작업을 여러개의 스레드에게 시켜보자</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="p">{</span> 
+ <span class="nx">Worker</span><span class="p">,</span> 
+ <span class="nx">isMainThread</span><span class="p">,</span> 
+ <span class="nx">parentPort</span><span class="p">,</span> 
+ <span class="nx">workerData</span> 
+<span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">worker_threads</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">min</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">primes</span> <span class="o">=</span> <span class="p">[];</span>
+
+<span class="kd">const</span> <span class="nx">findPrimes</span> <span class="o">=</span> <span class="p">(</span><span class="nx">start</span><span class="p">,</span> <span class="nx">range</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+ <span class="kd">let</span> <span class="nx">isPrime</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+ <span class="kd">let</span> <span class="nx">end</span> <span class="o">=</span> <span class="nx">start</span> <span class="o">+</span> <span class="nx">range</span><span class="p">;</span>
+
+ <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="nx">start</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span> <span class="nx">end</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span><span class="p">){</span>
+  <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">j</span><span class="o">=</span><span class="nx">min</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">end</span><span class="p">);</span> <span class="o">++</span><span class="nx">j</span><span class="p">){</span>
+   <span class="k">if</span><span class="p">(</span> <span class="nx">i</span> <span class="o">!==</span> <span class="nx">j</span> <span class="o">&amp;&amp;</span> <span class="nx">i</span> <span class="o">%</span> <span class="nx">j</span> <span class="o">===</span> <span class="mi">0</span><span class="p">){</span>
+    <span class="nx">isPrime</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="k">break</span><span class="p">;</span>
+   <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">isPrime</span><span class="p">)</span> <span class="nx">primes</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+  <span class="nx">isPrime</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">if</span><span class="p">(</span><span class="nx">isMainThread</span><span class="p">){</span>
+ <span class="kd">const</span> <span class="nx">max</span> <span class="o">=</span> <span class="mi">10000000</span><span class="p">;</span>
+ <span class="kd">const</span> <span class="nx">threadCount</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+ <span class="kd">const</span> <span class="nx">threads</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Set</span><span class="p">();</span>
+ <span class="kd">const</span> <span class="nx">range</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">((</span><span class="nx">max</span> <span class="o">-</span> <span class="nx">min</span><span class="p">)</span> <span class="o">/</span> <span class="nx">threadCount</span><span class="p">);</span>
+ <span class="kd">let</span> <span class="nx">start</span> <span class="o">=</span> <span class="nx">min</span><span class="p">;</span>
+
+ <span class="c1">// 범위 분할</span>
+ <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">threadCount</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span><span class="p">){</span>
+  <span class="kd">const</span> <span class="nx">wStart</span> <span class="o">=</span> <span class="nx">start</span><span class="p">;</span>
+  <span class="nx">threads</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="k">new</span> <span class="nx">Worker</span><span class="p">(</span><span class="nx">__filename</span><span class="p">,</span> <span class="p">{</span> 
+   <span class="na">workerData</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">start</span><span class="p">:</span> <span class="nx">wStart</span><span class="p">,</span>
+    <span class="nx">range</span><span class="p">,</span>
+   <span class="p">}</span>
+  <span class="p">}));</span>
+  <span class="nx">start</span> <span class="o">+=</span> <span class="nx">range</span><span class="p">;</span>
+ <span class="p">}</span>
+
+ <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">worker</span> <span class="k">of</span> <span class="nx">threads</span><span class="p">){</span>
+  <span class="nx">worker</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">error</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+   <span class="k">throw</span> <span class="nx">err</span><span class="p">;</span>
+  <span class="p">});</span>
+  
+  <span class="nx">worker</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">exit</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+   <span class="nx">threads</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="nx">worker</span><span class="p">);</span>
+   <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">threads</span><span class="p">.</span><span class="nx">size</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">primes</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+  <span class="p">});</span>
+
+  <span class="nx">worker</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">message</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+   <span class="nx">primes</span> <span class="o">=</span> <span class="nx">primes</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">msg</span><span class="p">);</span>
+  <span class="p">});</span>
+  <span class="p">}</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+ <span class="nx">findPrimes</span><span class="p">(</span><span class="nx">workerData</span><span class="p">.</span><span class="nx">start</span><span class="p">,</span> <span class="nx">workerData</span><span class="p">.</span><span class="nx">range</span><span class="p">);</span>
+ <span class="nx">parentPort</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">(</span><span class="nx">primes</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>위 코드는 여덟 개의 스레드가 2부터 천 만의 범위에서 소수를  구하는 과정을 나타낸 것이다. 멀티 스레드 프로그래밍은 어려운데, 이유는 일을 나눠서 처리하도록 하는 것 뿐만아니라 공유하고 있는 데이터가 많아 일을 나누기가 어렵다. 위와 같은 경우는 정해진 범위를 일정하게 분할할 수 있기에 가능한 케이스이다.</p>
+
+<p>여러개의 스레드를 사용한다고해서 싱글 스레드에 비해 항상 빠른 것은 아니다. 스레드를 생성하고 스레드 사이의 통신하는데 상당한 리소스가 발생하므로, 이 점을 고려하여 멀티 스레딩을 해야한다(이 또한 어려운 이유이다.) 자칫하면 싱글 스레드보다 더 느려질 수 있음에 주의하자.</p>
+
+<h2 id="348-child_process">3.4.8) child_process</h2>
+
+<p>노드에서 다른 프로그램을 실행하고 싶거나 명령어를 수행하고 싶을 때 사용하는 모듈이다.</p>
+
+<p>이 모듈을 통해 다른 언어의 코드를 실행하고 결괏값을 받을 수 있다.</p>
+
+<p>fork와 exec와 유사하다.</p>
+
+<ul>
+  <li>쉘 명령어 실행하기</li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">exec</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">child_process</span><span class="dl">'</span><span class="p">).</span><span class="nx">exec</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">process</span> <span class="o">=</span> <span class="nx">exec</span><span class="p">(</span><span class="dl">'</span><span class="s1">ls</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">process</span><span class="p">.</span><span class="nx">stdout</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">data</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+ <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+<span class="p">})</span>
+
+<span class="nx">process</span><span class="p">.</span><span class="nx">stderr</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">data</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+ <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<ul>
+  <li>파이썬 실행</li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="p">{</span> <span class="nx">spawn</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">child_process</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">process</span> <span class="o">=</span> <span class="nx">spawn</span><span class="p">(</span><span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="dl">'</span><span class="s1">run.py</span><span class="dl">'</span><span class="p">])</span> <span class="c1">// 명령어. [인수 배열]</span>
+
+<span class="nx">process</span><span class="p">.</span><span class="nx">stdout</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">data</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+ <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+<span class="p">})</span>
+
+<span class="nx">process</span><span class="p">.</span><span class="nx">stderr</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">data</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+ <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>exec는 쉘을 실행하여 명령어를 수행하고, spawn은 새로운 프로세스를 띄우면서 명령어를 실행한다는 점에서 차이가 있다. spawn도 세 번째 인수로 { shell: true }를 넣게되면 exec처럼 쉘에서 명령어를 수행한다. 쉡을 실행하는지 마는지에 따라 수행할 수 있는 명령어에 차이가 있다.</p>
+
+<p><strong>(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.</strong></p>
+:ET

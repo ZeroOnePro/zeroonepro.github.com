@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "연도별 포스트"
+  - title: "연도 별"
     url: /posts/
-  - title: "카테고리"
+  - title: "카테고리 별"
     url: /categories/
-  - title: "태그"
+  - title: "태그 별"
     url: /tags/
 # - title: "Quick-Start Guide"
 #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/

@@ -102,7 +102,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--encrypted">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -308,310 +308,41 @@
 
 
 
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="1.3 서버 외의 노드">
-    <meta itemprop="description" content="1.3 서버 외의 노드">
-    <meta itemprop="datePublished" content="2021-08-01T00:00:00+09:00">
+  <div class="archive">
     
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://itsbeenalongday.github.io//node.js/1.3-%EC%84%9C%EB%B2%84-%EC%99%B8%EC%9D%98-%EB%85%B8%EB%93%9C/" class="u-url" itemprop="url">1.3 서버 외의 노드
-</a>
-          </h1>
-          
-
-  <p class="page__meta">
+      <h1 id="page-title" class="page__title">1.3 서버 외의 노드</h1>
     
+    <div id="encrypted_content">
+  <form id="encrypt_form" action="#" method="post">
+    <input id="encrypt_password"
+      type="password"
+      name="password"
+      placeholder="try 'password'"
+      autofocus 
+    />
+    <input type="submit" value="Unlock"/>
+  </form>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    document.getElementById('encrypt_form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var passphrase = document.getElementById('encrypt_password').value,
+          encryptedMsg = '323282ae7031078a89db32eecc739c4498dfa71c3ac7b8087522e7ad3c4d095cU2FsdGVkX19mnIV6WhjSQbi5zOTWVi4NvWM1FlA7WI+T17GWO9LD7WWrkhnY89KXPWGH/xs17X+oeJUj5fDaS5Ipjux6dIvXBzqCqrsD+Va+LX4tSs1Pc4rQpHMoGgTv4635HNofbJqRtVvH3uItY+4ZT2D5wwueFLU7zFc9ti5M0snG69203Xgkr3aDg8XYjEeLGep3J4/kcr5egu5yNS9Yoke+Nxt0Gh8PHLDIc51uFwapjAYK23aSoFpJLq7KYolNoeMIumo7S5lCcqpV/vUJFka9OmKoHPwxhd2J8KJxDSUqOm/gqGhbJWNYf/Zi/K/rEaqnxO2wNnuYlEAZYAgl62TR5upIsW1mrQQtMqEWnYKI+PMiBm85UQjGHH1Jpbfg09/7Fcicf38sAOatZbXtKF+AWSD8J8L7pV66oz9re0FTLovmy40YeLT3Od6ytatrVvRmR16nxlfcXpoiuAc9GdKSecLjAhK8meRPvaUb1rLCjx8UdBnRPVpnmYw9Twxu97tL4zB5JFrthjFgKeD1L9OrRYFOQ+An9zzZYlbf2HO1CR4UiKrBgmA3R3r3s9r5YLj8/d9EpAraiqNEGka/pSHoCjKMTVoXrd0SEUpSWoYH65dpW/sOx2CRo+bUSwYiWguyYO36gSoFORKnv0m2JjjT3qSNDp4uPB+3Zz9qGTLwVopzJy3IAcvjgAbeinIpYjgce9blpaIU4EbyGEVeEdCBsdQoLaP10oymxUZTAYnF4jT1C+PIwnvKe9bmG58aqWHhY8i8kWd0EZMugqXXDPwN5gLd4E32ddkcZM/gigk+G+QqV1H/gZpPVdX1exJez+/ujWh3xesvZo6bo24g0isukIxvFsoJuKD1Y2EQYcxT5LKTL0TtZP5m5f+R1W1zUCoxpvTfv1T0HRa5EILzogA+GJKLpez+x4Yub98OCJuO1jyrvXhoMlUcmHykYukm07Iw0u5oGbZKNq+VDPXag8yrJEJz68HcVajOjOxwCOUm0yBJuIQHvV4RkkkgbCT+a1WS6HHHRmT7Q6qZie2E5CKj/KBd9HX7NRtmBgqj2i4N8O8CC45JU2RYs3XHNsrloYbADZ0wQyRSbWHyoA==',
+          encryptedHMAC = encryptedMsg.substring(0, 64),
+          encryptedHTML = encryptedMsg.substring(64),
+          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
-    
+      if (decryptedHMAC !== encryptedHMAC) {
+        alert('Bad passphrase!');
+        return;
+      }
 
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          최대 1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-        </header>
-      
-
-      <section class="page__content e-content" itemprop="text">
-        
-          <aside class="sidebar__right sticky">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#13-서버-외의-노드">1.3 서버 외의 노드</a></li></ul>
-
-            </nav>
-          </aside>
-        
-        <h1 id="13-서버-외의-노드">1.3 서버 외의 노드</h1>
-
-<p>처음에는 노드를 대부분 서버로 사용했지만, 노드는 자바스크립트 런타임이므로 용도가 서버에만 한정 되지 않는다.
-사용범위가 점점 늘어나서 노드는 웹, 모바일, 데스크톱 애플리케이션 개발에도 사용되기 시작하였다.</p>
-
-<p>노드 기반으로 돌아가는 대표적인 웹 프레임워크로는 앵귤러, 리액트, 리액트 네이티브, 뷰 등이 있다.</p>
-
-<p>데스크톱 개발 도구로는 일렉트론이 대표적인데, 이걸로 만들어진 프로그램으로는 vscode, atom, slack, discord 등이 있다.</p>
-
-<p><strong>(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.</strong></p>
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/tags/#node-js" class="page__taxonomy-item p-category" rel="tag">Node.js</a><span class="sep">, </span>
-    
-      <a href="/tags/#theory" class="page__taxonomy-item p-category" rel="tag">theory</a>
-    
-    </span>
-  </p>
-
-
-
-
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/categories/#node-js" class="page__taxonomy-item p-category" rel="tag">Node.js</a>
-    
-    </span>
-  </p>
-
-
-        
-
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-08-01T00:00:00+09:00">August 1, 2021</time></p>
-
-      </footer>
-
-      <section class="page__share">
-  
-    <h4 class="page__share-title">공유하기</h4>
-  
-
-  <a href="https://twitter.com/intent/tweet?text=1.3+%EC%84%9C%EB%B2%84+%EC%99%B8%EC%9D%98+%EB%85%B8%EB%93%9C%20https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.3-%25EC%2584%259C%25EB%25B2%2584-%25EC%2599%25B8%25EC%259D%2598-%25EB%2585%25B8%25EB%2593%259C%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.3-%25EC%2584%259C%25EB%25B2%2584-%25EC%2599%25B8%25EC%259D%2598-%25EB%2585%25B8%25EB%2593%259C%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.3-%25EC%2584%259C%25EB%25B2%2584-%25EC%2599%25B8%25EC%259D%2598-%25EB%2585%25B8%25EB%2593%259C%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
-
-      
-  <nav class="pagination">
-    
-      <a href="/node.js/1.2-%EC%84%9C%EB%B2%84%EB%A1%9C%EC%84%9C%EC%9D%98-%EB%85%B8%EB%93%9C/" class="pagination--pager" title="1.2 서버로서의 노드
-">이전</a>
-    
-    
-      <a href="/node.js/1.4-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/" class="pagination--pager" title="1.4 개발 환경 설정
-">다음</a>
-    
-  </nav>
-
-    </div>
-
-    
-  </article>
-
-  
-  
-    <div class="page__related">
-      <h2 class="page__related-title">연관</h2>
-      <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/Jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" rel="permalink">Jekyll 블로그에 비밀번호 설정하기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          최대 1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">```bash
-</p>
-  </article>
+      var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+      document.getElementById('encrypted_content').innerHTML = plainHTML;
+    });
+  </script>
 </div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.4-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" rel="permalink">3.4 노드 내장 모듈 사용하기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">이런 내장  모듈들이 있고, 어디에 쓰이는지만 기억해두자 자세한 함수는 도큐먼트 참조
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.3-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/" rel="permalink">3.3 노드 내장 객체 알아보기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">3.3 노드 내장 객체 알아보기
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.2-%EB%AA%A8%EB%93%88%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="permalink">3.2 모듈로 만들기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">노드는 코드를 모듈로 만들 수 있다는 점에서 브라우저의 자바스크립트와 다르다.
-</p>
-  </article>
-</div>
-
-        
-      </div>
-    </div>
-  
-  
+  </div>
 </div>
     </div>
 

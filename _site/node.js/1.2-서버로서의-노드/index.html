@@ -102,7 +102,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--encrypted">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -308,337 +308,41 @@
 
 
 
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="1.2 서버로서의 노드">
-    <meta itemprop="description" content="노드는 기본적으로 싱글 스레드, 논 블로킹 모델을 사용한다.(js의 특성이기도 하다)">
-    <meta itemprop="datePublished" content="2021-08-01T00:00:00+09:00">
+  <div class="archive">
     
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://itsbeenalongday.github.io//node.js/1.2-%EC%84%9C%EB%B2%84%EB%A1%9C%EC%84%9C%EC%9D%98-%EB%85%B8%EB%93%9C/" class="u-url" itemprop="url">1.2 서버로서의 노드
-</a>
-          </h1>
-          
-
-  <p class="page__meta">
+      <h1 id="page-title" class="page__title">1.2 서버로서의 노드</h1>
     
+    <div id="encrypted_content">
+  <form id="encrypt_form" action="#" method="post">
+    <input id="encrypt_password"
+      type="password"
+      name="password"
+      placeholder="try 'password'"
+      autofocus 
+    />
+    <input type="submit" value="Unlock"/>
+  </form>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    document.getElementById('encrypt_form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var passphrase = document.getElementById('encrypt_password').value,
+          encryptedMsg = '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',
+          encryptedHMAC = encryptedMsg.substring(0, 64),
+          encryptedHTML = encryptedMsg.substring(64),
+          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
-    
+      if (decryptedHMAC !== encryptedHMAC) {
+        alert('Bad passphrase!');
+        return;
+      }
 
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          2 분 소요
-        
-      </span>
-    
-  </p>
-
-
-        </header>
-      
-
-      <section class="page__content e-content" itemprop="text">
-        
-          <aside class="sidebar__right sticky">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              
-
-            </nav>
-          </aside>
-        
-        <p>노드는 기본적으로 싱글 스레드, 논 블로킹 모델을 사용한다.(js의 특성이기도 하다)</p>
-
-<p>노드 서버 또한 동일한 모델일 수 밖에 없다. 따라서 노드 서버의 장단점은 싱글 스레드, 논 블로킹 모델의 장단점과 크게 다르지 않다.</p>
-
-<p>서버에는 기본적으로 I / O 요청이 많이 발생하므로, I / O 처리를 잘하는 노드를 서버로 사용하면 좋다.</p>
-
-<p>노드는 논 블로킹 방식으로 코드를 잘 작성하면 libuv 라이브러리를 사용하여 IO 작업을 논 블로킹 방식으로 처리한다. 따라서 스레드 하나가 수 많은 I/O를 혼자서 감당할 수 있다.</p>
-
-<p>하지만, CPU 부하가 높은 작업에는 적절하지 않은데 이유는 싱글 스레드이기 때문이다. 작성한 코드는 모두 스레드 하나가 처리하기 때문에 이 부하가 높은 작업이 논 블로킹이 될 수 없다면, 대기 시간이 길어지게 된다.</p>
-
-<p>이와 같은 특성을 활용하려면 노드를 어디에 사용해야 좋을까?</p>
-
-<p>네트워크나 데이터베이스, 디스크 작업 같은 IO에 특화 되어 있기 때문에 개수는 많지만 크기는 작은(크면 CPU 부하 높음) 데이터를 실시간으로 주고받는데 적합하다. 이를 테면, 실시간 채팅, 주식 차트, json 데이터를 제공하는 API 서버가 노드를 많이 사용한다.</p>
-
-<p>노드 12 버전에서 worker thread의 기능 안정화롤 멀티 스레드 작업을 할 수 있게 되었지만, 멀티 스레드 프로그래밍의 난이도는 높으며, C / C++, Rust, Go와 같은 언어에 비해 속도가 많이 느리다.</p>
-
-<p>멀티 스레드 기능이 있다고 하더라도 이미지나 비디오 처리, 혹은 대규모 데이터 처리처럼 CPU를 많이 사용하는 작업에는 권장 되지 않는다. 노드보다 더 적합한 다른 프레임워크가 많다. 이럼에도 굳이 이런 환경에서 노드를 쓰고자 하면, AWS 람다나 구글 클라우드 functions같은 서비스에서 CPU 부하가 높은 작업을 처리한 것을 지원하는 방향을 고려해야 한다. 싱글 스레드 프로그래밍은 멀티 스레드 방식보다 상대적으로 쉬우므로 서버 프로그래밍에 익숙치 않은 사람도 쉽게 입문할 수 있다는 장점이 있다. 다만 싱글 스레드 방식으로 서버를 운영할 때는 하나 뿐인 스레드가 에러로 멈추지 않도록 잘 관리해야 한다. 에러를 제대로 처리하지 못하면 하나뿐인 스레드가 죽어 서버 전체가 멈추기 때문이다.</p>
-
-<p>노드에는 웹 서버가 내장되어 있어 Apache, Nginx 같은 WAS를 따로 integration할 필요는 없으나,  서비스 규모가 커지면 Nginx 등의 웹 서버를 노드 서버와 integration해야 한다.</p>
-
-<p>노드는 Go처럼 비동기에 강점을 보이는 언어이지만 nginx처럼 정적 파일 제공, 로드 밸런싱에 특화된 웹 서버에 비해서는 속도가 느리다. 그렇긴 해도 극단적인 성능향상이 필요없는 경우에는 굳이 선택하지 않을 이유는 없다.</p>
-
-<p><img src="https://itsbeenalongday.github.io//assets/images/node.js/1.2.1.png" alt="1.2.1" /></p>
-
-<p>자바스크립트를 사용함으로써 얻을 수 있는 장점도 있다.</p>
-
-<p>요즘은 XML대신 JSON을 사용해서 데이터를 주고 받는데, JSON이 자바스크립트 형식이므로 노드에서는 쉽게 처리할 수 있다.</p>
-
-<p>웹 사이트 중에는 쇼핑몰, 블로그와 같은 정적인 컨텐츠를 많이 제공하는 사이트가 많은데, 이들에게 노드가 서버로써 적합할까?</p>
-
-<p>이런 사이트들은 정적인 컨텐츠(변하지 않는 html, css, js 등)를 많이 제공한다. 기본적인 틀이 있고, 그 안의 내용물(텍스트, 이미지)만 조금씩 달라진다. 노드가 다른 서버 프레임워크에 비해 이러한 컨텐츠를 제공하는데 뚜렷한 장점을 가지지는 않지만, 그렇다고 적합하지 않다고 할 수 없다. Nunjucks, Pug, EJS 같은 템플릿 엔진을</p>
-
-<p>안전성과 보안성 측면의 문제도 이미 충분히 검증되었다.</p>
-
-<p>NASA, AirBnB, Uber, Netflix, linkedIn, Paypal, ebay 와 같이 결제 시스템을 사용하는 대기업들도 서비스를 노드로 운영한다.</p>
-
-<p><strong>(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.</strong></p>
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/tags/#node-js" class="page__taxonomy-item p-category" rel="tag">Node.js</a><span class="sep">, </span>
-    
-      <a href="/tags/#theory" class="page__taxonomy-item p-category" rel="tag">theory</a>
-    
-    </span>
-  </p>
-
-
-
-
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/categories/#node-js" class="page__taxonomy-item p-category" rel="tag">Node.js</a>
-    
-    </span>
-  </p>
-
-
-        
-
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-08-01T00:00:00+09:00">August 1, 2021</time></p>
-
-      </footer>
-
-      <section class="page__share">
-  
-    <h4 class="page__share-title">공유하기</h4>
-  
-
-  <a href="https://twitter.com/intent/tweet?text=1.2+%EC%84%9C%EB%B2%84%EB%A1%9C%EC%84%9C%EC%9D%98+%EB%85%B8%EB%93%9C%20https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.2-%25EC%2584%259C%25EB%25B2%2584%25EB%25A1%259C%25EC%2584%259C%25EC%259D%2598-%25EB%2585%25B8%25EB%2593%259C%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.2-%25EC%2584%259C%25EB%25B2%2584%25EB%25A1%259C%25EC%2584%259C%25EC%259D%2598-%25EB%2585%25B8%25EB%2593%259C%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.2-%25EC%2584%259C%25EB%25B2%2584%25EB%25A1%259C%25EC%2584%259C%25EC%259D%2598-%25EB%2585%25B8%25EB%2593%259C%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
-
-      
-  <nav class="pagination">
-    
-      <a href="/node.js/1.1-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/" class="pagination--pager" title="1.1 핵심 개념 이해하기
-">이전</a>
-    
-    
-      <a href="/node.js/1.3-%EC%84%9C%EB%B2%84-%EC%99%B8%EC%9D%98-%EB%85%B8%EB%93%9C/" class="pagination--pager" title="1.3 서버 외의 노드
-">다음</a>
-    
-  </nav>
-
-    </div>
-
-    
-  </article>
-
-  
-  
-    <div class="page__related">
-      <h2 class="page__related-title">연관</h2>
-      <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/Jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" rel="permalink">Jekyll 블로그에 비밀번호 설정하기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          최대 1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">```bash
-</p>
-  </article>
+      var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+      document.getElementById('encrypted_content').innerHTML = plainHTML;
+    });
+  </script>
 </div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.4-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" rel="permalink">3.4 노드 내장 모듈 사용하기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">이런 내장  모듈들이 있고, 어디에 쓰이는지만 기억해두자 자세한 함수는 도큐먼트 참조
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.3-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/" rel="permalink">3.3 노드 내장 객체 알아보기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">3.3 노드 내장 객체 알아보기
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.2-%EB%AA%A8%EB%93%88%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="permalink">3.2 모듈로 만들기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">노드는 코드를 모듈로 만들 수 있다는 점에서 브라우저의 자바스크립트와 다르다.
-</p>
-  </article>
-</div>
-
-        
-      </div>
-    </div>
-  
-  
+  </div>
 </div>
     </div>
 

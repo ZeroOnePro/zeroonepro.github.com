@@ -102,7 +102,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--encrypted">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -308,349 +308,41 @@
 
 
 
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="1.4 개발 환경 설정">
-    <meta itemprop="description" content="1.4 개발 환경 설정하기">
-    <meta itemprop="datePublished" content="2021-08-01T00:00:00+09:00">
+  <div class="archive">
     
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://itsbeenalongday.github.io//node.js/1.4-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/" class="u-url" itemprop="url">1.4 개발 환경 설정
-</a>
-          </h1>
-          
-
-  <p class="page__meta">
+      <h1 id="page-title" class="page__title">1.4 개발 환경 설정</h1>
     
+    <div id="encrypted_content">
+  <form id="encrypt_form" action="#" method="post">
+    <input id="encrypt_password"
+      type="password"
+      name="password"
+      placeholder="try 'password'"
+      autofocus 
+    />
+    <input type="submit" value="Unlock"/>
+  </form>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    document.getElementById('encrypt_form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var passphrase = document.getElementById('encrypt_password').value,
+          encryptedMsg = '7dcef56e67b6c2769456c241cf1115c077ad00ff96e888e0469cf331f27c63bcU2FsdGVkX19DHFLDlrKSi2A1Pxc/qdUzZB1rkz3wdnFSGi5S7CMXPEtqzi2QVT58Q8e3Q552cfNN7GbeNd7/yKqaQi4Ex4FGb3iY+3ID9lgUoIIx6JSXH3CLzYYykftpGu/W2sYWIPFvPAwHS+yDp8Unm4bwpAn8O0Y2WAiRt2+DP9gUd1K6Axx34ugKZOvVa1y3I1CkCbcsfq9Rqw9WE5soNBciBUfi8oko4PG80v7ha9Jj43bLWIRrqnpPlZ/FnXnUDYe8ykvOPzAWLkNtBr79Ys/ra0750GzffE09hqdTZD/wA4Z/mhdYru1s7KOJazpVj2pnr3GTjGNs7M4d1ed49Y0VknwE5p2Mkb1qg9tEfYD8macEvBOm5odCHXZddNWpNcXm0RnsTaxXndfuet/mh8O1AaML7Z5jlsl5D5e0NYlCoQset9Rwkef6/+iJGZ8yl4STwV/B0Wo3is2Uy2V6F/ApH5vePg0bHOrC0AJsKmxqxywQt+6TsydpwCkIDEScsfLFpLbVWj/WEo4FoYuUVRaAw0C1HQI2HP6aGfguRn61ZWl38Rcq0vXHV1NpMUgwKrNTuWY/UJG60Aqk8XjxmvKQzd46+qL19Lj9EdB1Bn0lzk1LvL0tbxmV7qfHmCiYsb48iO1zFWmUomcYztIe+z2H0S/+aYQHT94yRsVDSTBkXzjWUaigbp6BtIuka1DXYrMWBd9gyCKDiCXSm+5CCrwBfZ3lZbSW99/3RVSkNwHarA1viXvv249gmsqDmcBk2FeOqKt19KpTjnK452+Fd4R4Nmi1u+wlfEJCMEB7T9YQM1UNeaeluFqinc9U79j/IuKKfSHaNI5oOwrtDv+8pX6cKhodB/65CJOtSrNDGdb4GJdiJ9e46AbpTnmND4PwW1p37qZL3aEe4Gy92m5B6Vixq4QGCyHoP+cUo/OfznwytYgxZNFWnPvOINB4MLoI0WdB2r5DwLs4LbKGOqPGqCF6cF/MJdTRmfiiKmRigpPOlqXXV4YW9qRulj4zds3B+H7+fMByjfCrsAFmBu8kffFccu26YUaeSueLSXTf9QyEL3qyGxdODJ1yhZTkhZD+LXRHHkiEQeNjCsLHoDdMjEUoGZ3RwXkQQhksfn0vOSqxvl/FOu9qa50iAVfJtRp00eolCNTxqGJwgKiXFn6SF66ugPJ8kprditn3z1/4h2KvEufmclth6uYIUH/T8wixyuKYwSd2PFf0wei919wBs+jLHkCpPFNMth0CX8duAK4X495jKgUjF6/b9mYBVrRk9fE8qhiZMaolZNm3TLxBha7LadQSX+Ih1FzUHp7EKS0FLIw2zTIoGmFFs764g9NTqcSHCeTOS9n+bXo8Km9j4ztD++44jUYwmNAJeXe8mYEZ9mVaT9u3/P2awEGNGtm6es7QQD2LVDDj0nJhC6G14JYVMK5JjQlLDBAT5mCVjkEylgrwew4LmA/rWAd4iURDc0uOfm8Zp17H4pYXZjAv3Uqamy4QHpMBZgo2DbIz+8pf28B/xFA2GUzOoOKgnnAEbeCAdWpiPZOiAZoSGuhBa/Voa8sQFawEy+20UcJFbV/7E5RSgesNmslX2ZxheX4c1nlUkLsQIgLU8rxaKg==',
+          encryptedHMAC = encryptedMsg.substring(0, 64),
+          encryptedHTML = encryptedMsg.substring(64),
+          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
-    
+      if (decryptedHMAC !== encryptedHMAC) {
+        alert('Bad passphrase!');
+        return;
+      }
 
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          최대 1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-        </header>
-      
-
-      <section class="page__content e-content" itemprop="text">
-        
-          <aside class="sidebar__right sticky">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#14-개발-환경-설정하기">1.4 개발 환경 설정하기</a></li></ul>
-
-            </nav>
-          </aside>
-        
-        <h1 id="14-개발-환경-설정하기">1.4 개발 환경 설정하기</h1>
-
-<ol>
-  <li>Node 설치</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># mac</span>
-<span class="nv">$ </span>brew <span class="nb">install </span>node
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># linux</span>
-
-<span class="nv">$ </span><span class="nb">sudo </span>apt-get update
-<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> build-essential
-<span class="nv">$ </span><span class="nb">sudo </span>apt-get intall curl
-<span class="nv">$ </span>curl <span class="nt">-sL</span> https://deb.nodesource.com/setup_14.x | <span class="nb">sudo</span> <span class="nt">-E</span> bash <span class="nt">--</span>
-<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> nodejs
-</code></pre></div></div>
-
-<ol>
-  <li>설치 확인</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>node <span class="nt">-v</span>
-v16.4.1
-
-<span class="nv">$ </span>npm <span class="nt">-v</span>
-7.18.1
-</code></pre></div></div>
-
-<p>기본적으로 /usr/bin 또는 /usr/local/bin에 들어 있지 않으면 명령어 실행 시 에러가 발생한다</p>
-
-<p>명령어를 사용할 때 에러가 발생한다면, 환경 변수를 체크하고 등록되있지 않다면,</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 환경 변수 확인</span>
-<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$PATH</span>
-
-<span class="c"># 환경 변수에 노드 등록하기</span>
-<span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:노드 설치 경로
-</code></pre></div></div>
-
-<ol>
-  <li>npm 업데이트</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm <span class="nb">install</span> <span class="nt">-g</span> npm
-</code></pre></div></div>
-
-<p><strong>(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.</strong></p>
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/tags/#node-js" class="page__taxonomy-item p-category" rel="tag">Node.js</a><span class="sep">, </span>
-    
-      <a href="/tags/#theory" class="page__taxonomy-item p-category" rel="tag">theory</a>
-    
-    </span>
-  </p>
-
-
-
-
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/categories/#node-js" class="page__taxonomy-item p-category" rel="tag">Node.js</a>
-    
-    </span>
-  </p>
-
-
-        
-
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-08-01T00:00:00+09:00">August 1, 2021</time></p>
-
-      </footer>
-
-      <section class="page__share">
-  
-    <h4 class="page__share-title">공유하기</h4>
-  
-
-  <a href="https://twitter.com/intent/tweet?text=1.4+%EA%B0%9C%EB%B0%9C+%ED%99%98%EA%B2%BD+%EC%84%A4%EC%A0%95%20https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.4-%25EA%25B0%259C%25EB%25B0%259C-%25ED%2599%2598%25EA%25B2%25BD-%25EC%2584%25A4%25EC%25A0%2595%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.4-%25EA%25B0%259C%25EB%25B0%259C-%25ED%2599%2598%25EA%25B2%25BD-%25EC%2584%25A4%25EC%25A0%2595%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.4-%25EA%25B0%259C%25EB%25B0%259C-%25ED%2599%2598%25EA%25B2%25BD-%25EC%2584%25A4%25EC%25A0%2595%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
-
-      
-  <nav class="pagination">
-    
-      <a href="/node.js/1.3-%EC%84%9C%EB%B2%84-%EC%99%B8%EC%9D%98-%EB%85%B8%EB%93%9C/" class="pagination--pager" title="1.3 서버 외의 노드
-">이전</a>
-    
-    
-      <a href="/node.js/1.5-%EC%B0%B8%EA%B3%A0%ED%95%A0-%EB%A7%8C%ED%95%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%AA%A8%EC%9D%8C/" class="pagination--pager" title="1.5 참고할 만한 사이트 모음
-">다음</a>
-    
-  </nav>
-
-    </div>
-
-    
-  </article>
-
-  
-  
-    <div class="page__related">
-      <h2 class="page__related-title">연관</h2>
-      <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/Jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" rel="permalink">Jekyll 블로그에 비밀번호 설정하기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          최대 1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">```bash
-</p>
-  </article>
+      var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+      document.getElementById('encrypted_content').innerHTML = plainHTML;
+    });
+  </script>
 </div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.4-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" rel="permalink">3.4 노드 내장 모듈 사용하기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">이런 내장  모듈들이 있고, 어디에 쓰이는지만 기억해두자 자세한 함수는 도큐먼트 참조
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.3-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/" rel="permalink">3.3 노드 내장 객체 알아보기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">3.3 노드 내장 객체 알아보기
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.2-%EB%AA%A8%EB%93%88%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="permalink">3.2 모듈로 만들기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">노드는 코드를 모듈로 만들 수 있다는 점에서 브라우저의 자바스크립트와 다르다.
-</p>
-  </article>
-</div>
-
-        
-      </div>
-    </div>
-  
-  
+  </div>
 </div>
     </div>
 

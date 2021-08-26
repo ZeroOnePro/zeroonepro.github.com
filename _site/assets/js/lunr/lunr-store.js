@@ -72,31 +72,31 @@ var store = [{
         "teaser": null
       },{
         "title": "1.1 핵심 개념 이해하기",
-        "excerpt":"1.1 핵심 개념 이해하기 1.1.1 정의 Node.js는 chrome V8 자바스크립트 엔진으로 빌드된 자바스크립트 런타임이다. Node.js는 이벤트 기반, 논 블로킹 I / O 모델을 사용해 가볍고 효율적이다. 자바스크립트 엔진 자바스크립트 엔진(JavaScript engine)은 자바스크립트 코드를 실행하는 프로그램 또는 인터프리터이다. 자바스크립트 엔진은 전통적인 인터프리터일 수도 있고, 특정한 방식으로 바이트코드로 JIT 컴파일을 할 수...","categories": ["Node.js"],
+        "excerpt":" ","categories": ["Node.js"],
         "tags": ["Node.js","theory"],
         "url": "/node.js/1.1-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/",
         "teaser": null
       },{
         "title": "1.2 서버로서의 노드",
-        "excerpt":"노드는 기본적으로 싱글 스레드, 논 블로킹 모델을 사용한다.(js의 특성이기도 하다) 노드 서버 또한 동일한 모델일 수 밖에 없다. 따라서 노드 서버의 장단점은 싱글 스레드, 논 블로킹 모델의 장단점과 크게 다르지 않다. 서버에는 기본적으로 I / O 요청이 많이 발생하므로, I / O 처리를 잘하는 노드를 서버로 사용하면 좋다. 노드는 논...","categories": ["Node.js"],
+        "excerpt":" ","categories": ["Node.js"],
         "tags": ["Node.js","theory"],
         "url": "/node.js/1.2-%EC%84%9C%EB%B2%84%EB%A1%9C%EC%84%9C%EC%9D%98-%EB%85%B8%EB%93%9C/",
         "teaser": null
       },{
         "title": "1.3 서버 외의 노드",
-        "excerpt":"1.3 서버 외의 노드 처음에는 노드를 대부분 서버로 사용했지만, 노드는 자바스크립트 런타임이므로 용도가 서버에만 한정 되지 않는다. 사용범위가 점점 늘어나서 노드는 웹, 모바일, 데스크톱 애플리케이션 개발에도 사용되기 시작하였다. 노드 기반으로 돌아가는 대표적인 웹 프레임워크로는 앵귤러, 리액트, 리액트 네이티브, 뷰 등이 있다. 데스크톱 개발 도구로는 일렉트론이 대표적인데, 이걸로 만들어진 프로그램으로는 vscode,...","categories": ["Node.js"],
+        "excerpt":" ","categories": ["Node.js"],
         "tags": ["Node.js","theory"],
         "url": "/node.js/1.3-%EC%84%9C%EB%B2%84-%EC%99%B8%EC%9D%98-%EB%85%B8%EB%93%9C/",
         "teaser": null
       },{
         "title": "1.4 개발 환경 설정",
-        "excerpt":"1.4 개발 환경 설정하기 Node 설치 # mac $ brew install node # linux $ sudo apt-get update $ sudo apt-get install -y build-essential $ sudo apt-get intall curl $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -- $ sudo apt-get install -y nodejs 설치 확인 $ node -v v16.4.1...","categories": ["Node.js"],
+        "excerpt":" ","categories": ["Node.js"],
         "tags": ["Node.js","theory"],
         "url": "/node.js/1.4-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/",
         "teaser": null
       },{
         "title": "1.5 참고할 만한 사이트 모음",
-        "excerpt":"1.5 참고할 만한 사이트 모음      노드 공식 사이트: https://nodejs.org/ko   노드 공식 사이트의 가이드: https://nodejs.org/ko/docs/guides/   노드에 대한 전반적인 설명: https://nodejs.dev/   이벤트 루프 설명: https://nodejs.org/ko/docs/guides/event-loop-timers-and-nexttick/   이벤트 루프에 대한 시각적 설명: http://latentflip.com/loupe   (Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.  ","categories": ["Node.js"],
+        "excerpt":" ","categories": ["Node.js"],
         "tags": ["Node.js","theory"],
         "url": "/node.js/1.5-%EC%B0%B8%EA%B3%A0%ED%95%A0-%EB%A7%8C%ED%95%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%AA%A8%EC%9D%8C/",
         "teaser": null

@@ -1,0 +1,43 @@
+I"+<ol>
+  <li>gulpfile과 crypto.js 활용하여 static page에서 비밀번호기능을 구현할 수 있다.</li>
+</ol>
+
+<ul>
+  <li>원리: 암호화된 파일을 배포하고, 비밀번호를 입력시 이 비밀번호를 이용하여 복호화하여 렌더링 시켜준다.</li>
+</ul>
+
+<ol>
+  <li>스텝 바이 스텝</li>
+</ol>
+
+<p>(1) _protected 폴더에 작성한 마크다운 문서들을 집어넣는다.</p>
+
+<p>(2) gulpfile.js 세팅(자신의 jekyll blog 디렉토리 구조에 맞춰서 커스터마이징)</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="dl">'</span><span class="s1">firewall:encrypt</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="dl">'</span><span class="s1">_protected/*.*</span><span class="dl">'</span><span class="p">)</span> <span class="c1">// 암호화할 디렉터리</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">encrypt</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PASSWD</span><span class="p">))</span> <span class="c1">// 암호 비번</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="dl">'</span><span class="s1">_posts/2021/node.js/chapter</span><span class="se">\</span><span class="s1"> 3</span><span class="dl">'</span><span class="p">));</span> <span class="c1">// 암호화된 파일들의 저장 위치</span>
+<span class="p">});</span>
+
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="dl">'</span><span class="s1">firewall:watch</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">(</span><span class="dl">'</span><span class="s1">_protected/*.*</span><span class="dl">'</span><span class="p">,</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">series</span><span class="p">(</span><span class="dl">'</span><span class="s1">firewall:encrypt</span><span class="dl">'</span><span class="p">));</span> <span class="c1">// watch 옵션으로 protect 변할 때마다 자동 실행됨</span>
+<span class="p">});</span>
+
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="dl">'</span><span class="s1">firewall</span><span class="dl">'</span><span class="p">,</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">series</span><span class="p">(</span><span class="dl">'</span><span class="s1">firewall:encrypt</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">firewall:watch</span><span class="dl">'</span><span class="p">,()</span> <span class="o">=&gt;</span> <span class="p">{}));</span>
+
+<span class="cm">/*
+  END FIREWALL TASKS
+*/</span>
+
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="dl">'</span><span class="s1">default</span><span class="dl">'</span><span class="p">,</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">series</span><span class="p">(</span><span class="dl">'</span><span class="s1">firewall</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// your tasks here</span>
+<span class="p">}));</span>
+</code></pre></div></div>
+
+<p>(3) run gulp</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span>gulp firewall:encrypt 
+</code></pre></div></div>
+
+<p>{4)암호회된 파일이 제대로 나왔는지 확인하기</p>
+:ET

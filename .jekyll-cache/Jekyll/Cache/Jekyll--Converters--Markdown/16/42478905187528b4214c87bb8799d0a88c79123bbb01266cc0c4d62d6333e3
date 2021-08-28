@@ -1,0 +1,5 @@
+I"8<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nv">$ </span>jekyll build <span class="o">&amp;&amp;</span> npx staticrypt _site/index.html &lt;내가 지정할 비밀번호&gt; <span class="nt">-o</span> _site/index.html
+
+</code></pre></div></div>
+:ET

@@ -7,6 +7,7 @@ var cryptojs      = require('crypto-js');
 var marked        = require('marked');
 var FileSystem    = require('fs');
 var through       = require('through2');
+const hljs        = require('highlight.js');
 var PluginError   = gutil.PluginError;
 
 /*
@@ -75,6 +76,22 @@ function encrypt(password) {
         }));
         return callback();
       }
+
+      marked.setOptions({
+        renderer: new marked.Renderer(),
+        highlight: function(code, lang) {
+          const language = hljs.getLanguage(lang) ? lang : 'plaintext';
+          return hljs.highlight(code, { language }).value;
+        },
+        langPrefix: 'hljs language- highlight', // highlight.js css expects a top-level 'hljs' class.
+        pedantic: false,
+        gfm: true,
+        breaks: false,
+        sanitize: false,
+        smartLists: true,
+        smartypants: false,
+        xhtml: false
+      });
 
       var encryptedBody = cryptojs.AES.encrypt(marked(originalBody), password),
           hmac = cryptojs.HmacSHA256(encryptedBody.toString(), cryptojs.SHA256(password).toString()).toString(),

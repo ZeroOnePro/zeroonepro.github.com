@@ -330,7 +330,7 @@
     document.getElementById('encrypt_form').addEventListener('submit', function(e) {
       e.preventDefault();
       var passphrase = document.getElementById('encrypt_password').value,
-          encryptedMsg = 'e7ee792d8a5f2451201ea3cc8a7d2e5c6a788cf1d15bd3dc7c4b7d6170b4380fU2FsdGVkX1/NEVE7n+ol75oUOa8v9Xs3u5tuVoWEvCo4wLizUQbwT1zc0HRUtsTivzxGwyxxRRyKn0r/m0g7gpKSK5RBNptlS25jKAa85fgzsKtV+X7pXIQfsI+B2r8Zoidob9WPz/krn8sWuvcTYtmiNFgB4pEih0dwhW08Dz+ZEebyLUnPTgoF1H7rIMb68d1yBtymamLEXGeqAxVoV9N3YuiLZlZUD69stuy8z8M+jHEj7w3CBJ1UcHa3f9vJ8bFGAIR9L6zJL8Fsg/oCtogwnso7qjdOhDRPO8UkFj8Pj1xecrTrBvgn09cwtr21JF/ib3wh14+7dc+1QO0TC2hKfiXTJJfXuxZz6iEDZY1bojwiy4I2Rthe4iz1izninD8y5T3Tik8rVxDvPFExlSnXyWVndXJurfiFzmVAXC/lj/v6PS0bPDnCZrTX6oq468rxXRdbUO+qcNLW7kzkXBEcjYC7s5XDk2r1At8dIXpd5OcNuVLI7nU3zbe6Tg4IQmj9aC5NY0e3+CTDstp26idPdR9zCXb2cER3NjXUqwzH8KGTi9iXiJzxohlMhDkQCqGFlwydWQvpRcYeu4TPji+sigVCHpowourmQZHlKB1RorwUrSXjlOfyaAbkg0eaooSGIFuneKyP2Tp9x/Wp1qKL7An68yOpJqVNR7ACNPQKpWmQ8rVRi+dUUmD5/IqwS4dpCqE/C8L187XBNh1URWGCW7mF/Pq6RWKAURJRrSm0jyEhU1plSNSHPtb3OfrsQnnkk7RiHfUgBfdApFCgIg2Y3bu9kO/CQpzhyyHCQzGKxxs9dFIyCfsBBCB3sO6Bq6bdeXCd7j9UaZ2K7RtTU0BnHx0G5nTJZZ33lTGz6VMJ62B7qgn80IrOjNqKKMpSG2eYRiCZgUZUNCv+nPsA6msb7HdgVQf2k7ruYaRHxaTMWfGMYJjSDCWq9pg1PmXEDQyWKmim/FkB8kbJrywrzsvOeS1gMeUINJAunZIsCh1zYarqjHSwihM/juv7rvNSoXPWnL6JKH8wEDhCdtGdKY2agY0mcprRjqkVYr12M0346qr4ZurTgYbkiYPaJG5nRUZheQtFd+HSCna4rZ6QqA==',
+          encryptedMsg = '16709741bc521d0527a3919057b4bc7807e773e2d8951a1af86804f60fc48bd6U2FsdGVkX1/AfW5hL+uCK6KhRURdIFWdWgMzZmcpbdPwfko1POUwUmDnOJZYzJvZbe0ThWe4KiFJ2LE0KkaZ66z3LnLz79p+cXe+Tw9wulYYcu3Iv0ivLQNcLltIpg2XssEjJT3t/0vXhwJqpd7amjkXq4ZZ6NeGiD7MM/rhyO8T+HzngItP1YKGbao6QT0tUx7/+Jr96JOR+Qp14wUUtlY33sTz1vlByxDj1CFLm6GrCoC5tOv+nzqvs0UJSjb23UEISgUdPBag0l1MgQ9PHVtKLb8jirF7hFRO5jJGiyMyiCu7729VkZkAUGvJYjPR4+qiDS4yZ2LkxKMMna3aaPAnjvPrQzy3nWppzAjR2orXy9Nj/xw4l/qAYwttV0Su5pK0mL1YRnbypPHJZEuyjo0W+7cOCE0xkOD0VSl1SVgZ11uec9kxf59mPfT1LvMPkAoH8dr/j3O73080pcgHwJGWBISrlfoRmb1V+A+NOc1ZroV2SsDmvZ051JUFoz8rKhv78UksiXJp17EfWwJbLSwnFcYI7oS4zAFbV5xlF34EUo8XWQIt8xJ54jR3m7sORCj1HZiO4LK9JtD12fiCluyIK0mEVlCiXOYLgPqmKxU9yNhrsTTMCeYn6BefwKkPH0nDs4V+yWV0yWno08mfTxbF2U76n3zl0jAM9KO04g+qD2PtOlwENhBCR2VsgCZtODCJTpHU62btCblGasmkoyr6VUbP6cLkQR56MRdcTeM0OW+zLeUk3npxxZVyCi4unyQFYvl9d/ofSehn2u70N2vzX1CKMF7fXb/CVRMNoasKOHYP8x8owWfEVRme4/zNtOxJJhzK+T9AL1EPk80l8BmeQGreG9qMQOhXh9P9kP27KOME38qTCyzEG4gierYAb24CN1Phn83IWnktuafQ1MWlz/G7DORDsexHAOkx5ysa7RoiyaR2woAspE/H++dEeUshIKSiNgaRAdN+wdgB3FEm5Fhxmf2YYBWPNhixWBLx4qYz1TTfyxNGuhsMdrBpanb3mL1kKZ3XVi/rOFmzbNw/9zp/ghUCWgzsCEy6bEokJTGIS41QW5p+QbBl19VaaDCX9oXuB5cngt7PqHgnrA==',
           encryptedHMAC = encryptedMsg.substring(0, 64),
           encryptedHTML = encryptedMsg.substring(64),
           decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
@@ -404,7 +404,7 @@
   <script>
     var disqus_config = function () {
       this.page.url = "https://itsbeenalongday.github.io//node.js/1.3-%EC%84%9C%EB%B2%84-%EC%99%B8%EC%9D%98-%EB%85%B8%EB%93%9C/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/node.js/1.3 서버 외의 노드"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.identifier = "/node.js/1.3 서버 외의 노드"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

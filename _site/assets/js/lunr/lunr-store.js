@@ -1,4 +1,16 @@
 var store = [{
+        "title": "할 일 목록",
+        "excerpt":"현재 내 자신을 알라, 난 앞으로 무엇을 해야하는가? 스스로 사용가능한 프레임워크로 만들 것들 Backend Rails Nest Front React 스스로 사용 가능이라 함은 혼자서 cli환경 구축하고 프로젝트를 시작할 수 있어야 함 어느 주제의 도메인이 주어 지더라도 머리에 아키텍쳐 청사진이 대강은 그려지는 정도 계획하고 있는 이론 공부 Node.js 교과서(챕터 16까지 있다!) 1-8...","categories": ["To do"],
+        "tags": ["To do","Road map"],
+        "url": "/to%20do/%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/",
+        "teaser": null
+      },{
+        "title": "Jekyll 블로그 세팅하기",
+        "excerpt":"How to Run? 1 $ jekyll serve --livereload # hot-reload option step by step 최상위는 index.html _data 디렉토리의 navigation.yml에서 네비게이션 바를 설정할 수 있다. # main links main: - title: \"연도별 포스트\" url: /posts/ - title: \"카테고리\" url: /categories/ - title: \"태그\" url: /tags/ _pages 디렉토리에서 위에서 설정한 navigation url...","categories": ["Blog"],
+        "tags": ["blog","jekyll"],
+        "url": "/blog/Jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0/",
+        "teaser": null
+      },{
         "title": "1.1 핵심 개념 이해하기",
         "excerpt":" ","categories": ["Node.js"],
         "tags": ["Node.js","theory"],
@@ -69,5 +81,11 @@ var store = [{
         "excerpt":" ","categories": ["Node.js"],
         "tags": ["Node.js","theory"],
         "url": "/node.js/3.4-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/",
+        "teaser": null
+      },{
+        "title": "Jekyll 블로그에 비밀번호 설정하기",
+        "excerpt":" $ jekyll build &amp;&amp; npx staticrypt _site/index.html &lt;내가 지정할 비밀번호&gt; -o _site/index.html   ","categories": ["Blog"],
+        "tags": ["blog","jekyll"],
+        "url": "/blog/Jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/",
         "teaser": null
       }]

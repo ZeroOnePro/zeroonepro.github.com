@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: posts
 ---
 
 <div id="encrypted_content">
@@ -22,12 +22,12 @@ layout: archive
           decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
       if (decryptedHMAC !== encryptedHMAC) {
-        alert('Bad passphrase!');
+        alert('잘못된 비밀번호입니다.');
         return;
       }
 
       var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
       document.getElementById('encrypted_content').innerHTML = plainHTML;
-    });
+    })
   </script>
 </div>

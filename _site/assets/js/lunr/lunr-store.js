@@ -84,7 +84,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Jekyll 블로그에 비밀번호 설정하기",
-        "excerpt":" $ jekyll build &amp;&amp; npx staticrypt _site/index.html &lt;내가 지정할 비밀번호&gt; -o _site/index.html   ","categories": ["Blog"],
+        "excerpt":"1. 원리 및 구현 암호화된 파일을 배포하고, 비밀번호를 입력시 이 비밀번호를 이용하여 복호화하여 렌더링 시켜준다. gulpfile, crypto.js, marked.js 등의 라이브러리들을 활용하여 static page에서 구현할 수 있다. 2. 스텝 바이 스텝 (1) _protected 폴더에 작성한 마크다운 문서들을 집어넣는다. (2) gulpfile.js 세팅(자신의 jekyll blog 디렉토리 구조에 맞춰서 커스터마이징) gulp.task('firewall:encrypt', () =&gt; {...","categories": ["Blog"],
         "tags": ["blog","jekyll"],
         "url": "/blog/Jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/",
         "teaser": null

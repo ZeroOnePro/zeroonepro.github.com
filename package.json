@@ -47,6 +47,7 @@
     "graceful-fs": "4.2.4"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "highlight.js": "^11.2.0"
   }
 }

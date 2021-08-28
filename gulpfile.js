@@ -10,6 +10,8 @@ var through       = require('through2');
 const hljs        = require('highlight.js');
 var PluginError   = gutil.PluginError;
 
+require('dotenv').config();
+
 /*
   START FIREWALL TASKS
 */
@@ -107,7 +109,7 @@ function encrypt(password) {
 
 gulp.task('firewall:encrypt', () => {
   return gulp.src('_protected/*.*')
-    .pipe(encrypt('password'))
+    .pipe(encrypt(process.env.PASSWD))
     .pipe(gulp.dest('_posts/2021/node.js/chapter\ 3'));
 });
 

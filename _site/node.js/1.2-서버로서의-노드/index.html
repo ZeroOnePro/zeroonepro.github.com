@@ -102,7 +102,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--encrypted">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -186,6 +186,10 @@
 
   
 
+
+<style>
+  pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1e1e1e;color:#dcdcdc}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-symbol{color:#569cd6}.hljs-link{color:#569cd6;text-decoration:underline}.hljs-built_in,.hljs-type{color:#4ec9b0}.hljs-class,.hljs-number{color:#b8d7a3}.hljs-meta .hljs-string,.hljs-string{color:#d69d85}.hljs-regexp,.hljs-template-tag{color:#9a5334}.hljs-formula,.hljs-function,.hljs-params,.hljs-subst,.hljs-title{color:#dcdcdc}.hljs-comment,.hljs-quote{color:#57a64a;font-style:italic}.hljs-doctag{color:#608b4e}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-tag{color:#9b9b9b}.hljs-template-variable,.hljs-variable{color:#bd63c5}.hljs-attr,.hljs-attribute{color:#9cdcfe}.hljs-section{color:gold}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-bullet,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-selector-tag{color:#d7ba7d}.hljs-addition{background-color:#144212;display:inline-block;width:100%}.hljs-deletion{background-color:#600;display:inline-block;width:100%}
+</style>
 
 <div id="main" role="main">
   
@@ -308,337 +312,40 @@
 
 
 
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="1.2 서버로서의 노드">
-    <meta itemprop="description" content="노드는 기본적으로 싱글 스레드, 논 블로킹 모델을 사용한다.(js의 특성이기도 하다)">
-    <meta itemprop="datePublished" content="2021-08-01T00:00:00+09:00">
+  <div class="archive">
     
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://itsbeenalongday.github.io//node.js/1.2-%EC%84%9C%EB%B2%84%EB%A1%9C%EC%84%9C%EC%9D%98-%EB%85%B8%EB%93%9C/" class="u-url" itemprop="url">1.2 서버로서의 노드
-</a>
-          </h1>
-          
-
-  <p class="page__meta">
+      <h1 id="page-title" class="page__title">1.2 서버로서의 노드</h1>
     
+    <div id="encrypted_content">
+  <form id="encrypt_form" action="#" method="post" style="width: 100%; display: inline-flex; justify-items: center; column-gap: 1rem;">
+    <input id="encrypt_password"
+           type="password"
+           name="password"
+           placeholder="비밀번호를 입력하세요"
+           autofocus />
+    <input type="submit" value="입력"/>
+  </form>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    document.getElementById('encrypt_form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var passphrase = document.getElementById('encrypt_password').value,
+          encryptedMsg = '734fb95883089f73db8cee67899b5607c7db8ec9f93330d17240b05b44eee2adU2FsdGVkX1+ox9cNvDbuVYkyvEqZMtLpa3lb2f8Mfxp8WbLG5NL3xBHnGGFDa6PVsUzsYDTqgqzoNpEGiKPwY/xKHAc1fFVPyFoVa4BG0QyAZaOI481qf0PXj8TRI7Xc/VeSwvexQk37xBT8uVaoeR26lpIRFgH571xQKfNLW9+SJ250Vp0kRgxOkfbuIHzWpNvs2DDEz7mvh5/X/zskezoK45f9mxueKjjbpz+a5reQkLVuVv72Pb+YGPpyO35iMjrSGS9+Z7Jom3XTGzta32PQimT5egoQ0kDLwbaWJuSzldfnPTH/Sa6y8pXqJ5CShgVgudl5JZpLmSsO90EXhra2MrmDGPySPtYyzGf1uksi6OXiCPxAjSZSVB7ItmaqvmLBri4MQddLZu6NWabUxU59Phcvxz4A+v6x62qlT4nkyM9Cot7bMFP+bdzU+joThOz/txoON5j0wJ8vZAZo7vSRUYEBz6gZqU7L5fmc3YZRo6WXzdS/HOgU4ZeROYdV/W1MfC98eJpIE5SE6WQq95FbMw+uX4oO8K0N0R09+8wg7m2Ow1M6NWKE7pcS2VKCEyyh0LBmHEKJUqOTpeo0qarO4/0mr/6Sf6+SpNFKuM9cmEueRPBr7dDpzFixDKoMUlQe/d/HOlgy6ttvooNXcnDPx5iKRRgJQ1XXZXl5ThTA6u5r1OnFjyVYrjGsSrOz64xYv3Z3ubSzoRbGzMcwnr57yq7UnUZ1Lnd5WVWioevFGoh2osPceiB7O8GR2Ee3e69M+qqikwoYCuut48fWdLTegF6LicQOVVBZ9Ni+iJnF8+iWJoJ23sPChglZ+4sqREBDhZzlspM/Y51ligSSveI5RkqSCRrSOGOuRs4SY4ZXTlAk7SPGKUBSvpkkuf9upm3WAAXLZflOyG2RZqesp9M67r2sMEgmexfNI0Qf9eHEAen9WyjW74FAmkGk8JfDnXiuNuhki1Ce3UhNr65etjmSPo8woCJ/Lii1HC3ytvcQOeYw7Lc3o1Iydp0LnH18ACQvfcTl+4UXvsk2ClvTN9N+K+wHJlszTjYvJZsLm/jfmdriTOFOMQ441Y7DD+dETFT3+daATUay4Q1Cfh5LG3KWLpqdSnjCk3Q0Ny1nTFsKgqrvWcGngRxnMBYDbEsMX5jddUN92Cxkw3EfhoNQ5NuYuBukaOltqFD27EEqtxvTwJEx+AUDM2Hli4RJsrZyo//QqSXsOZUUNhr1uBeKgUvCMu1lxZfhYIhTOFRFM+ARtsQ6h5NayYnQhtHOCu/W5Oqdlc+icyWSTqkkgHD2LiKY3XgVmLndmC18deBjCuP1Ipx0w2BrEG03HnvmI3aXGjNTmSPIHWTEU7bAbjQ4e/+GNt99sbg12Q8WOLdJpaKx5gcolP0ZJlsIupxhinhJeGIHmf7jaE+GMjyUjaB09jAvriecLs19QG0MK1ApkiI+q0kGD9J2fwX6qxbCB5Wyw2lBkbpMNwGils30hi26iPS99GQPQCc+nqZVLBx4pwvD9TYD52JfcAQbX7nt0AIXQWZAoDHDoc3C4Pa+BYJhRkyD5DPo7iHD7RDRjlsRj0yOchDRxW/7kjo8fmwTRs5XKU11ay3kY0rT5kOGlgDkxSFefga/4/gVzvhsOI2uwZXvzCOQV7CK0tH6V0b0/ohw77Y3x2RhDKnYDwhunANeNvJqebYPT1Z/rwI3cLVYgXdT/4kiGJmGA6DZtdt+aMmAJVoGwO6NA27XIshk/L3WYl/hUiPkoRGVik8odEiKR/Ca/XpcUw6U7dKa06i6Rj4NZ5j3kqqmEvUKhWhd68maxmNr3r/0KmTSQgfIXvAmlyHMGdtIOc88ElgrzG4in+fbrRXyD9Z/QMLEMjF5M3D1nRn5lsEapJ9JKLgcCptrLSAbR9hSan4bOvaM2bMxbtfVTlfD8HhCtBWwrudFqXVxmGitr3kSTiJANEERrYo6zX7XayqKRLPJujzO2DoGZsW2mMgM2sbgqs4WzyYd69sPBW1ASoqBtWPcEy8iOkhgcy4wNDXaaE4cPaSEB5TPnJmIb2YVfvm0jhyJ5OejWBtLY55jmymDG++RdgzsRtSCvmxUApT1zzGHNp6/+rwySZJ7zv4neGy2VkhsbVM+Ub8Ko7xJCanFbqmfq3o90VBWZzhuDcLvYM4FgNCi03nrgIWK/3QFtLVsAdLQCni8bed/JLuHZcq0NAf8M4yJz3v62a5GANbuNb9yCEUC1f2qMuUpZOcrIMNPd/DTXBKPkC6o74REV1HOZZQfam3CEb7+iYvcmelJGgbgWrTx1Bo08kXD8DgGBBd0frXxdytn+bNOoBgYb/GSwsh5PceMehOy/ACSd8AKpq3eFHrdkrT3/0XSaF63aQMr8XMKF/Wb8aU0AeYo7slhHtvzmm9bAK5PHvrMaCZhxrXbqzzS1dlOBVIAnSiBshTNDLOU7AFJAT1pecPm9YjM0Ci57swlBv8tzy21qdet5NBOaxwVpusYnoZFD6Tj5PypHw1vBqertJkdQYU1UIZszCQjXbTnPe84YhviW1W3dX+meBCYyALc/Hig2t2HWuaGOT03Px2RBB/GOrtYgovfzeqByRPzQ4v5Nun3oCyS4QwakdTQ+P7VfL7rAgz1UFGJFYqyygQOKHpZIEpNl3pPoU9B3b7huvXh4ePoStencTgO1eaRDWI+gG2HS6hRhHmsZ/D8OFHsyGPWT9T3lSjxkrCf/Z03QLjsyww+qDf4WOHh9Cx90EGxexPN83uRUkGsECu0loQRV43Gy2LWSPZY5IyII2+Qd56EnGIQvV2/sqIq1lfG6Ai47rALxKKuD61XzrpW/cGLz15IR0l6+Yx1XQXQUHkNlDMY7WFKuG3jR8dHN6eYIZsihkcCAr2C9PuNtmu/WXUldT/3t6uFbcmA2NT78r+2s9i15ZJKfrosPlSb0KHf+iB5fbIdoMXMlk/29t38A6yeGfwoHpeYxk/CDI/BKCqMkiusvjgna2d+GYxxYguSO1ak65oyJPbNv4t4jdqXQykwZ9MTZXpNuqHRqiDIEgW4CUYUYFmTno/uLbhXjAEsCuy+M48DuRRi6FtkOidAvUGilAuKgzUUGEIBoFKt3CRHv4FUu56rpWEZMi5twbkjEFeBBidCvbve0OHo5liqHG9lJxY6iZyWNy4ngT4YYeHgiqHHKxlPU/3nzgUcV4XG+mlZP07YVRQsbWNL3WKveFVgiAc8ZnCud/sZO3sXciWCTf5YLRs9PIhkTRU4SlW/KErsNt0gApsFlyWGf4xwltMwE7MpxJ1GmRdsCpoZkrjxPRbklgOIKTucIwatmpAEeChfmYYbPQggb7aBUGbDhcxBdehFEKBWsTF18mTeIQg/5YVbitgT9pMG4H/5ZK6Hhbzuxk6/Niq1fO23KBipFD11LyeiQIxJyKRpw5FCswqxmM8SZSzHfDAYHFOsgjvr3HwJusNzh10BJI/J8I+7SHXqBZEmnODPZSYlnyWxjeXA1YeBH4vRlqYtquWCVOMGopPFPnF9nvahzD0Qi61uToVlbOE/haHPKMPLU+bv1swcv0AiyRcmszfI4FCw4B5/5XjhImm5U5vkVmyiFdkmbPjpP/mrqRAllFzhVT8ZGv6BrsXQKv7fb0D1DqNVolOC/DHNN7necfs2Ngf2Kl3dIbJgvJGxYzoRFskh4xPctRU/S4ckeT+mO02xCcxEmR0Io2eWQOdyNCzYwMnWCyVB6v0mprYqzMHZvjlc1ahKi7kOQVtPh8EXOIfEL0VbyXKIqM75j3/e6lkH5k98IEkndcOouZNK3LAP9tjO3CfAIZbNeGjtRu0e4V0MXDwdeA4+JXYc+giVPKZ5JCNgVmuL+v9mWGG13aVQpCDifgxY3aq1qcLhrQZYE97OoN8vj78kUqs3U75COlC9HnMnQFdueTXTXz1yLyC2Do6JVCdWxNgfBd6+iD72Usj26Gl0ajh7aXIjuzJPJoon+/YxfwX1xzPw2FWY7DAfEwFxJsJPHXoWBDwPtlft8GsHrp7xiBv7pIljaqCpP1OfNLbbA4W6xIGvOtSUg4tJqgDo40JN2lfpVqYUk1t1sF/uRJx58pTXag3122T3Tby58hbX1YO0u62ZPkjCmViMkObvsyiuOYaxHq0JPKLfV2+o6btNBGzf4oVu0D6HxBUG1B0Gs/9oKvoG2G8GXHymEl8+wugIA8RuXVX5xO2mAnirdOd7LEvLx4aIzWDqESXdJnhXLVUE8IqOX8KULeQTVfmiyfrJgwZczFDFFzvvfTKTUJ5yN6OwKqU03zJDlBztNphUxBMW8g5Y+hA2oOqOdz5H6gp9qWUqmBMEpXWde1tk63uz9GlXNsLJVAbVw6gKtk5k40l2C3xwr7wYw4WDgRjjPpn7GBS+qGeQpWlgOL9PlUXzzBMTBxPLYG8kNqAOOhFvrqFvOTD3FxV8u8GHPkofsPRnNi3hGh8G1wYY+nTdTQWWO1JGGsUMWD5U2d1Ck1JHKy6dOowOAPY98Ky+S4qjJj411U0ThR/fmQmtqMYQhFzorgZWrEmBEXYdyGHOCK4OwqqDn6BFFKTOVoduzCK4DsUT0iWG26etuHCCRrbVMCO70cftv63MSUYCOehs0KBPgcNv7Weft6wPicgb4ejcqrtCsjBveFEyQrSCiWv41adYbvBdFolQEFYq8Lokf0CeVfNEYVvaH5f3TaMi0Utsw+U6MK/27ywM84qhNTlfZNBHBxmyw8rMFgYxGnzHn2GkQyZV/wYJsxH+rCT9bPk9F7s5UvqsjPSuCl0E26DhXyaa6KinrXJCRdI565ZjrjJYP5LYb+zIg06fvgC7uDQpy96txGLM7zpiXoXgJtqrfzI3etthSmDx/jrxJBIYH5AhkmqvPdSFmnSIRDYo8VvI1VND/ZmxwvXpsBfiolAqkcM74Us5zhxMKb7+QAPUrGXfjj9nE1MZzkauAbYGduheDFBdEcbrrO6CK50/M7PAOlD10/qjYrl0I7DBGBdDKb3eYBcseVs6wI/YpbhVN641iwXn3oe5+X91I03WClZ+Lz+DV5PeN7S2hBW6iq9loP7MRbWjRMcI1KAqxB5C+Tm8HPDHIwH5zIKmEgd74yMj1yG8zGe9gjlJnzL30TE1EfQqez+xLcQ1sSiWeZRvnGCccIpZhb09LnvcYtF5kC7W6tHRKOg4MwR3h3eN5ngjS+D7cBwjsKeOOWnrXpQgLdQ8blJA7r/PtC58bbRreW/4oUI8GJ7AeEwBC4TGoA8+zN83nL7uEd/GCy96NjFik/xkk1LFnhUO7/XYwwMocM/ujZAkeX4hjL0uQsh2lgG0It70ywfvs0m4RMlZgbY/MUdaAMiqULbfjz5kEVuWO7OhhRDH0YCpqw8dZhPq1ENqy7sdNxCODZZYN2pgzANiSzjISOPyQybqXArgDYCcyXGzcEXlKVFrfVj2WWbKqFK3+YEcMhr/+Hvnv8b6bprVJs5d2UPKM3WYYxJ9vN4Vy2Cw6wms2uxpzm8nkovkoNXhqXr5FDkhmWUEK02vyUFqZxbi1OwmOxut4s2KRlzBNDtbsfs35xQlbJRMTt6EsmZ9AWKsJo6MzE1gVaMwHjt8XFNMMGrN8IiI1YUX5v1nwP3biAsKpt/lxkYgVkpQJxP9lkP9nhTdIJNwduESH6GFaDsfGrWjY9ZS+7lPaWpsfy0yf5KXudrQeXx55WX/sfW7HAlTGC6KVDRDQlwIdMrhMdrpI7mnROaSDp8GNahXTw8sUYfejbYQ9RcY+m9Kzf6wvatXVH6saMPCvBmFOWtd/WmcLalyIg704ZBFUoy0Dwwlj4jLGok+5DExK2Y5NS/ggbZZYGSoh1EppKAWht/KzWqnUt5/iaihJusmyCs05Wh1xSsQ4FGGxX/G1QKp4MFuoR+csFEZ99R0LPyhYSyB6cEezxiSt+mGl+6hUW8DusPHk+44934mIm/l6f31kVoCPJWS4gGcWNrvmeiFxw==',
+          encryptedHMAC = encryptedMsg.substring(0, 64),
+          encryptedHTML = encryptedMsg.substring(64),
+          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
-    
+      if (decryptedHMAC !== encryptedHMAC) {
+        alert('잘못된 비밀번호입니다.');
+        return;
+      }
 
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          2 분 소요
-        
-      </span>
-    
-  </p>
-
-
-        </header>
-      
-
-      <section class="page__content e-content" itemprop="text">
-        
-          <aside class="sidebar__right sticky">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              
-
-            </nav>
-          </aside>
-        
-        <p>노드는 기본적으로 싱글 스레드, 논 블로킹 모델을 사용한다.(js의 특성이기도 하다)</p>
-
-<p>노드 서버 또한 동일한 모델일 수 밖에 없다. 따라서 노드 서버의 장단점은 싱글 스레드, 논 블로킹 모델의 장단점과 크게 다르지 않다.</p>
-
-<p>서버에는 기본적으로 I / O 요청이 많이 발생하므로, I / O 처리를 잘하는 노드를 서버로 사용하면 좋다.</p>
-
-<p>노드는 논 블로킹 방식으로 코드를 잘 작성하면 libuv 라이브러리를 사용하여 IO 작업을 논 블로킹 방식으로 처리한다. 따라서 스레드 하나가 수 많은 I/O를 혼자서 감당할 수 있다.</p>
-
-<p>하지만, CPU 부하가 높은 작업에는 적절하지 않은데 이유는 싱글 스레드이기 때문이다. 작성한 코드는 모두 스레드 하나가 처리하기 때문에 이 부하가 높은 작업이 논 블로킹이 될 수 없다면, 대기 시간이 길어지게 된다.</p>
-
-<p>이와 같은 특성을 활용하려면 노드를 어디에 사용해야 좋을까?</p>
-
-<p>네트워크나 데이터베이스, 디스크 작업 같은 IO에 특화 되어 있기 때문에 개수는 많지만 크기는 작은(크면 CPU 부하 높음) 데이터를 실시간으로 주고받는데 적합하다. 이를 테면, 실시간 채팅, 주식 차트, json 데이터를 제공하는 API 서버가 노드를 많이 사용한다.</p>
-
-<p>노드 12 버전에서 worker thread의 기능 안정화롤 멀티 스레드 작업을 할 수 있게 되었지만, 멀티 스레드 프로그래밍의 난이도는 높으며, C / C++, Rust, Go와 같은 언어에 비해 속도가 많이 느리다.</p>
-
-<p>멀티 스레드 기능이 있다고 하더라도 이미지나 비디오 처리, 혹은 대규모 데이터 처리처럼 CPU를 많이 사용하는 작업에는 권장 되지 않는다. 노드보다 더 적합한 다른 프레임워크가 많다. 이럼에도 굳이 이런 환경에서 노드를 쓰고자 하면, AWS 람다나 구글 클라우드 functions같은 서비스에서 CPU 부하가 높은 작업을 처리한 것을 지원하는 방향을 고려해야 한다. 싱글 스레드 프로그래밍은 멀티 스레드 방식보다 상대적으로 쉬우므로 서버 프로그래밍에 익숙치 않은 사람도 쉽게 입문할 수 있다는 장점이 있다. 다만 싱글 스레드 방식으로 서버를 운영할 때는 하나 뿐인 스레드가 에러로 멈추지 않도록 잘 관리해야 한다. 에러를 제대로 처리하지 못하면 하나뿐인 스레드가 죽어 서버 전체가 멈추기 때문이다.</p>
-
-<p>노드에는 웹 서버가 내장되어 있어 Apache, Nginx 같은 WAS를 따로 integration할 필요는 없으나,  서비스 규모가 커지면 Nginx 등의 웹 서버를 노드 서버와 integration해야 한다.</p>
-
-<p>노드는 Go처럼 비동기에 강점을 보이는 언어이지만 nginx처럼 정적 파일 제공, 로드 밸런싱에 특화된 웹 서버에 비해서는 속도가 느리다. 그렇긴 해도 극단적인 성능향상이 필요없는 경우에는 굳이 선택하지 않을 이유는 없다.</p>
-
-<p><img src="https://itsbeenalongday.github.io//assets/images/node.js/1.2.1.png" alt="1.2.1" /></p>
-
-<p>자바스크립트를 사용함으로써 얻을 수 있는 장점도 있다.</p>
-
-<p>요즘은 XML대신 JSON을 사용해서 데이터를 주고 받는데, JSON이 자바스크립트 형식이므로 노드에서는 쉽게 처리할 수 있다.</p>
-
-<p>웹 사이트 중에는 쇼핑몰, 블로그와 같은 정적인 컨텐츠를 많이 제공하는 사이트가 많은데, 이들에게 노드가 서버로써 적합할까?</p>
-
-<p>이런 사이트들은 정적인 컨텐츠(변하지 않는 html, css, js 등)를 많이 제공한다. 기본적인 틀이 있고, 그 안의 내용물(텍스트, 이미지)만 조금씩 달라진다. 노드가 다른 서버 프레임워크에 비해 이러한 컨텐츠를 제공하는데 뚜렷한 장점을 가지지는 않지만, 그렇다고 적합하지 않다고 할 수 없다. Nunjucks, Pug, EJS 같은 템플릿 엔진을</p>
-
-<p>안전성과 보안성 측면의 문제도 이미 충분히 검증되었다.</p>
-
-<p>NASA, AirBnB, Uber, Netflix, linkedIn, Paypal, ebay 와 같이 결제 시스템을 사용하는 대기업들도 서비스를 노드로 운영한다.</p>
-
-<p><strong>(Node.js 교과서 개정 2판 - 길벗, 2021)을 학습하고 개인 학습용으로 정리한 내용입니다.</strong></p>
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/tags/#node-js" class="page__taxonomy-item p-category" rel="tag">Node.js</a><span class="sep">, </span>
-    
-      <a href="/tags/#theory" class="page__taxonomy-item p-category" rel="tag">theory</a>
-    
-    </span>
-  </p>
-
-
-
-
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/categories/#node-js" class="page__taxonomy-item p-category" rel="tag">Node.js</a>
-    
-    </span>
-  </p>
-
-
-        
-
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-08-01T00:00:00+09:00">August 1, 2021</time></p>
-
-      </footer>
-
-      <section class="page__share">
-  
-    <h4 class="page__share-title">공유하기</h4>
-  
-
-  <a href="https://twitter.com/intent/tweet?text=1.2+%EC%84%9C%EB%B2%84%EB%A1%9C%EC%84%9C%EC%9D%98+%EB%85%B8%EB%93%9C%20https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.2-%25EC%2584%259C%25EB%25B2%2584%25EB%25A1%259C%25EC%2584%259C%25EC%259D%2598-%25EB%2585%25B8%25EB%2593%259C%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.2-%25EC%2584%259C%25EB%25B2%2584%25EB%25A1%259C%25EC%2584%259C%25EC%259D%2598-%25EB%2585%25B8%25EB%2593%259C%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fnode.js%2F1.2-%25EC%2584%259C%25EB%25B2%2584%25EB%25A1%259C%25EC%2584%259C%25EC%259D%2598-%25EB%2585%25B8%25EB%2593%259C%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
-
-      
-  <nav class="pagination">
-    
-      <a href="/node.js/1.1-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/" class="pagination--pager" title="1.1 핵심 개념 이해하기
-">이전</a>
-    
-    
-      <a href="/node.js/1.3-%EC%84%9C%EB%B2%84-%EC%99%B8%EC%9D%98-%EB%85%B8%EB%93%9C/" class="pagination--pager" title="1.3 서버 외의 노드
-">다음</a>
-    
-  </nav>
-
-    </div>
-
-    
-  </article>
-
-  
-  
-    <div class="page__related">
-      <h2 class="page__related-title">연관</h2>
-      <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/Jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" rel="permalink">Jekyll 블로그에 비밀번호 설정하기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          최대 1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">```bash
-</p>
-  </article>
+      var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+      document.getElementById('encrypted_content').innerHTML = plainHTML;
+    })
+  </script>
 </div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.4-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" rel="permalink">3.4 노드 내장 모듈 사용하기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">이런 내장  모듈들이 있고, 어디에 쓰이는지만 기억해두자 자세한 함수는 도큐먼트 참조
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.3-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/" rel="permalink">3.3 노드 내장 객체 알아보기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">3.3 노드 내장 객체 알아보기
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/node.js/3.2-%EB%AA%A8%EB%93%88%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="permalink">3.2 모듈로 만들기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">노드는 코드를 모듈로 만들 수 있다는 점에서 브라우저의 자바스크립트와 다르다.
-</p>
-  </article>
-</div>
-
-        
-      </div>
-    </div>
-  
-  
+  </div>
 </div>
     </div>
 
@@ -697,7 +404,7 @@
   <script>
     var disqus_config = function () {
       this.page.url = "https://itsbeenalongday.github.io//node.js/1.2-%EC%84%9C%EB%B2%84%EB%A1%9C%EC%84%9C%EC%9D%98-%EB%85%B8%EB%93%9C/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/node.js/1.2 서버로서의 노드"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.identifier = "/node.js/1.2 서버로서의 노드"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

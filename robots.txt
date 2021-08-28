@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://itsbeenalongday.github.io//blog/sitemap.xml
+Sitemap: https://itsbeenalongday.github.io/sitemap.xml

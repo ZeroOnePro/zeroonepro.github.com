@@ -110,7 +110,7 @@ function encrypt(password) {
 gulp.task('firewall:encrypt', () => {
   return gulp.src('_protected/*.*')
     .pipe(encrypt(process.env.PASSWD))
-    .pipe(gulp.dest('_posts/2021/node.js/chapter\ 3'));
+    .pipe(gulp.dest('_posts/2021/node.js/chapter\ 4'));
 });
 
 gulp.task('firewall:watch', () => {

@@ -1,4 +1,4 @@
-I"0�<p><br />
+I"�U<p><br />
 <br />
 <br /></p>
 
@@ -101,10 +101,6 @@ author_profile: true # 좌측의 유저 프로필
 
   
 
-
-<span class="nt">&lt;style&gt;</span>
-  <span class="nt">pre</span> <span class="nt">code</span><span class="nc">.hljs</span><span class="p">{</span><span class="nl">display</span><span class="p">:</span><span class="nb">block</span><span class="p">;</span><span class="nl">overflow-x</span><span class="p">:</span><span class="nb">auto</span><span class="p">;</span><span class="nl">padding</span><span class="p">:</span><span class="m">1em</span><span class="p">}</span><span class="nt">code</span><span class="nc">.hljs</span><span class="p">{</span><span class="nl">padding</span><span class="p">:</span><span class="m">3px</span> <span class="m">5px</span><span class="p">}</span><span class="nc">.hljs</span><span class="p">{</span><span class="nl">background</span><span class="p">:</span><span class="m">#1e1e1e</span><span class="p">;</span><span class="nl">color</span><span class="p">:</span><span class="m">#dcdcdc</span><span class="p">}</span><span class="nc">.hljs-keyword</span><span class="o">,</span><span class="nc">.hljs-literal</span><span class="o">,</span><span class="nc">.hljs-name</span><span class="o">,</span><span class="nc">.hljs-symbol</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#569cd6</span><span class="p">}</span><span class="nc">.hljs-link</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#569cd6</span><span class="p">;</span><span class="nl">text-decoration</span><span class="p">:</span><span class="nb">underline</span><span class="p">}</span><span class="nc">.hljs-built_in</span><span class="o">,</span><span class="nc">.hljs-type</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#4ec9b0</span><span class="p">}</span><span class="nc">.hljs-class</span><span class="o">,</span><span class="nc">.hljs-number</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#b8d7a3</span><span class="p">}</span><span class="nc">.hljs-meta</span> <span class="nc">.hljs-string</span><span class="o">,</span><span class="nc">.hljs-string</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#d69d85</span><span class="p">}</span><span class="nc">.hljs-regexp</span><span class="o">,</span><span class="nc">.hljs-template-tag</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#9a5334</span><span class="p">}</span><span class="nc">.hljs-formula</span><span class="o">,</span><span class="nc">.hljs-function</span><span class="o">,</span><span class="nc">.hljs-params</span><span class="o">,</span><span class="nc">.hljs-subst</span><span class="o">,</span><span class="nc">.hljs-title</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#dcdcdc</span><span class="p">}</span><span class="nc">.hljs-comment</span><span class="o">,</span><span class="nc">.hljs-quote</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#57a64a</span><span class="p">;</span><span class="nl">font-style</span><span class="p">:</span><span class="nb">italic</span><span class="p">}</span><span class="nc">.hljs-doctag</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#608b4e</span><span class="p">}</span><span class="nc">.hljs-meta</span><span class="o">,</span><span class="nc">.hljs-meta</span> <span class="nc">.hljs-keyword</span><span class="o">,</span><span class="nc">.hljs-tag</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#9b9b9b</span><span class="p">}</span><span class="nc">.hljs-template-variable</span><span class="o">,</span><span class="nc">.hljs-variable</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#bd63c5</span><span class="p">}</span><span class="nc">.hljs-attr</span><span class="o">,</span><span class="nc">.hljs-attribute</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#9cdcfe</span><span class="p">}</span><span class="nc">.hljs-section</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="no">gold</span><span class="p">}</span><span class="nc">.hljs-emphasis</span><span class="p">{</span><span class="nl">font-style</span><span class="p">:</span><span class="nb">italic</span><span class="p">}</span><span class="nc">.hljs-strong</span><span class="p">{</span><span class="nl">font-weight</span><span class="p">:</span><span class="m">700</span><span class="p">}</span><span class="nc">.hljs-bullet</span><span class="o">,</span><span class="nc">.hljs-selector-attr</span><span class="o">,</span><span class="nc">.hljs-selector-class</span><span class="o">,</span><span class="nc">.hljs-selector-id</span><span class="o">,</span><span class="nc">.hljs-selector-pseudo</span><span class="o">,</span><span class="nc">.hljs-selector-tag</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#d7ba7d</span><span class="p">}</span><span class="nc">.hljs-addition</span><span class="p">{</span><span class="nl">background-color</span><span class="p">:</span><span class="m">#144212</span><span class="p">;</span><span class="nl">display</span><span class="p">:</span><span class="n">inline-block</span><span class="p">;</span><span class="nl">width</span><span class="p">:</span><span class="m">100%</span><span class="p">}</span><span class="nc">.hljs-deletion</span><span class="p">{</span><span class="nl">background-color</span><span class="p">:</span><span class="m">#600</span><span class="p">;</span><span class="nl">display</span><span class="p">:</span><span class="n">inline-block</span><span class="p">;</span><span class="nl">width</span><span class="p">:</span><span class="m">100%</span><span class="p">}</span>
-<span class="nt">&lt;/style&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main"</span> <span class="na">role=</span><span class="s">"main"</span><span class="nt">&gt;</span>
   
@@ -227,11 +223,54 @@ author_profile: true # 좌측의 유저 프로필
 
 
 
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"archive"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"page h-entry"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">itemprop=</span><span class="s">"headline"</span> <span class="na">content=</span><span class="s">"할 일 목록"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">itemprop=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"현재 내 자신을 알라, 난 앞으로 무엇을 해야하는가?"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">itemprop=</span><span class="s">"datePublished"</span> <span class="na">content=</span><span class="s">"2021-08-01T00:00:00+09:00"</span><span class="nt">&gt;</span>
     
-      <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"page-title"</span> <span class="na">class=</span><span class="s">"page__title"</span><span class="nt">&gt;</span>할 일 목록<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page__inner-wrap"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;header&gt;</span>
+          <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"page-title"</span> <span class="na">class=</span><span class="s">"page__title p-name"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://itsbeenalongday.github.io//to%20do/%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/"</span> <span class="na">class=</span><span class="s">"u-url"</span> <span class="na">itemprop=</span><span class="s">"url"</span><span class="nt">&gt;</span>할 일 목록
+<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/h1&gt;</span>
+          
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
     
-    <span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"현재-내-자신을-알라-난-앞으로-무엇을-해야하는가"</span><span class="nt">&gt;</span>현재 내 자신을 알라, 난 앞으로 무엇을 해야하는가?<span class="nt">&lt;/h3&gt;</span>
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          1 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+        <span class="nt">&lt;/header&gt;</span>
+      
+
+      <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"page__content e-content"</span> <span class="na">itemprop=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+        
+          <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"sidebar__right sticky"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"toc"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;header&gt;&lt;h4</span> <span class="na">class=</span><span class="s">"nav__title"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-file-alt"</span><span class="nt">&gt;&lt;/i&gt;</span> 목차<span class="nt">&lt;/h4&gt;&lt;/header&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"toc__menu"</span><span class="nt">&gt;&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#현재-내-자신을-알라-난-앞으로-무엇을-해야하는가"</span><span class="nt">&gt;</span>현재 내 자신을 알라, 난 앞으로 무엇을 해야하는가?<span class="nt">&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#급할-수록-돌아가라"</span><span class="nt">&gt;</span>급할 수록 돌아가라<span class="nt">&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#process-queue---------------------------"</span><span class="nt">&gt;</span>Process Queue [    |    |    |     |     |    ]<span class="nt">&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</span>
+
+            <span class="nt">&lt;/nav&gt;</span>
+          <span class="nt">&lt;/aside&gt;</span>
+        
+        <span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"현재-내-자신을-알라-난-앞으로-무엇을-해야하는가"</span><span class="nt">&gt;</span>현재 내 자신을 알라, 난 앞으로 무엇을 해야하는가?<span class="nt">&lt;/h3&gt;</span>
 
 <span class="nt">&lt;ul&gt;</span>
   <span class="nt">&lt;li&gt;</span>스스로 사용가능한 프레임워크로 만들 것들
@@ -251,45 +290,11 @@ author_profile: true # 좌측의 유저 프로필
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
 
-<span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"스스로-사용-가능이라-함은-혼자서-cli환경-구축하고-프로젝트를-시작할-수-있어야-함"</span><span class="nt">&gt;</span>스스로 사용 가능이라 함은 혼자서 cli환경 구축하고 프로젝트를 시작할 수 있어야 함<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;p&gt;&lt;strong&gt;</span>스스로 사용 가능이라 함은 혼자서 cli환경 구축하고 프로젝트를 시작할 수 있어야 함<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
 
-<span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"어느-주제의-도메인이-주어-지더라도-머리에-아키텍쳐-청사진이-대강은-그려지는-정도"</span><span class="nt">&gt;</span>어느 주제의 도메인이 주어 지더라도 머리에 아키텍쳐 청사진이 대강은 그려지는 정도<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;p&gt;&lt;strong&gt;</span>어느 주제의 도메인이 주어 지더라도 머리에 아키텍쳐 청사진이 대강은 그려지는 정도<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
 
 <span class="nt">&lt;ul&gt;</span>
-  <span class="nt">&lt;li&gt;</span>계획하고 있는 이론 공부
-    <span class="nt">&lt;ul&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Node.js 교과서(챕터 16까지 있다!)
-        <span class="nt">&lt;ul&gt;</span>
-          <span class="nt">&lt;li&gt;</span>1-8<span class="nt">&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;</span>9-16<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>종만북(1, 2, 3, 5, 6, 7 챕터)에서 대회용 알고리즘 말고 코딩테스트에 나오는 알고리즘들만 읽기
-        <span class="nt">&lt;ul&gt;</span>
-          <span class="nt">&lt;li&gt;</span>대회알고는 읽으면 좋겠다만, 알고리즘에만 투자할 순 없으니…<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>바킹독 알고 강의
-        <span class="nt">&lt;ul&gt;</span>
-          <span class="nt">&lt;li&gt;</span>현재는 12강까지 올라와있는 상태<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>자바스크립트(모던 자바스크립트 튜토리얼)<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>타입스크립트(한글 도큐)<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>NestJs 강의(제로초)<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>
-        <span class="nt">&lt;p&gt;</span>http 정리하기(인프런 김영한)<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;p&gt;</span>위상 정렬해보면(우선 내림차순)<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;ol&gt;</span>
-          <span class="nt">&lt;li&gt;</span>노드 교과서 ⇒ Nest.js<span class="nt">&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;</span>자바스크립트 ⇒ 타입스크립트<span class="nt">&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;</span>바킹독 알고강의 ⇒ 종만북<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ol&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;</span>당장 사용 가능 언어(리마인드 안 해도 되는 언어)
     <span class="nt">&lt;ul&gt;</span>
       <span class="nt">&lt;li&gt;</span>c / c++<span class="nt">&lt;/li&gt;</span>
@@ -322,37 +327,46 @@ author_profile: true # 좌측의 유저 프로필
       <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>algorithm
+  <span class="nt">&lt;li&gt;</span>algorithm의 이점 및 해야하는 당위성?
     <span class="nt">&lt;ul&gt;</span>
-      <span class="nt">&lt;li&gt;</span>내 구현력을 끌어 올려준 것은 알고리즘임을 잊지말길, 물론 학교 극헬과제도 있었지만<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>내 구현력을 끌어 올려준 것은 알고리즘임을 잊지말길!!!<span class="nt">&lt;/li&gt;</span>
       <span class="nt">&lt;li&gt;</span>문제해결능력이나 구현력, 사고력 증진에 ps는 굉장히 큰 도움이 됨<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>지금은 퇴물이 되어버렸기에 바킹독 알고리즘 강의와 종만북 보면서 알고리즘 리뷰하고 이번에는 하루 한문제 풀더라도 꾸준히 감유지하기<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>지금은 퇴물이 되어버렸기에 바킹독 알고리즘 강의와 종만북 보면서 알고리즘 리뷰하고 하루 한문제 풀더라도 꾸준히 감유지하기<span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
 
 <span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"급할-수록-돌아가라"</span><span class="nt">&gt;</span>급할 수록 돌아가라<span class="nt">&lt;/h3&gt;</span>
 
+<span class="nt">&lt;p&gt;</span>계획하고 있는 이론 공부<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;ul&gt;</span>
-  <span class="nt">&lt;li&gt;</span>7월에는 노마드로 기초 개념, 유튜브 강의(제로초) 보면서 NestJs 빡시게 익히기 + 게시판 토이 플젝
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"task-list"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"task-list-item"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"task-list-item-checkbox"</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">checked=</span><span class="s">"checked"</span> <span class="nt">/&gt;</span>7월 둘째 주 주말에 노마드 끝내고 제로초 강의 시작<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"task-list-item"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"task-list-item-checkbox"</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="nt">/&gt;</span>http 리뷰(김영한 강의)<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"task-list-item"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"task-list-item-checkbox"</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="nt">/&gt;</span>유튜브 제로초 강의 7월 넷째 주까지 끝내기<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"task-list-item"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"task-list-item-checkbox"</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="nt">/&gt;</span>제로초 시작하면서 토이 플젝 슬슬 시작(7월 셋째 주)<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"task-list-item"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"task-list-item-checkbox"</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="nt">/&gt;</span>틈틈히 타입스크립트 고도화 시키기(한글 도큐사이트로 공부해도 충분할 듯?)<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>8월에는  Node.js 교과서(express에 관한 서적이지만 nest는 Express 위에서 돌아간다!)로 고도화 시키기
+  <span class="nt">&lt;li&gt;</span>Node.js 교과서(챕터 16까지 있다!)<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>종만북에서 대회용 알고리즘 말고 코딩테스트에 나오는 알고리즘들만 읽기 + 바킹독 알고 강의
     <span class="nt">&lt;ul&gt;</span>
-      <span class="nt">&lt;li&gt;</span>본 네스트<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>다른 토이 플젝(주제는 생각해보기)<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>대회알고는 읽으면 좋겠다만, 알고리즘에만 투자할 순 없으니…<span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>9월에도 Node.js 교과서 읽으면서 미들급 석권<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>10월<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>11월<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>12월<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>자바스크립트(모던 자바스크립트 튜토리얼)<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>타입스크립트(한글 도큐)<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>NestJs 강의(제로초)<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;p&gt;</span>http 정리하기(인프런 김영한)<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>위상 정렬해보면(우선 내림차순)<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li&gt;</span>노드 교과서 ⇒ Nest.js<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>자바스크립트 ⇒ 타입스크립트<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>바킹독 알고강의 ⇒ 종만북<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>리액트를 다루는 기술<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>CS이론<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>node.js 교과서 완독(~10월)<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>nest.js 시작(node.js 교과서 express 부분 완독한 뒤 시작)<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>React.js 제대로 정리 시작하기(리액트를 다루는 기술 개정판으로 react 이론 자세히 공부)<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>PS는 언제 시작할지 모르겠당!<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>CS도 아직 시작 미정!<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
 
 <span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"process-queue---------------------------"</span><span class="nt">&gt;</span>Process Queue [    |    |    |     |     |    ]<span class="nt">&lt;/h3&gt;</span>
@@ -377,30 +391,172 @@ author_profile: true # 좌측의 유저 프로필
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
 
+        
+      <span class="nt">&lt;/section&gt;</span>
 
-<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"taxonomy__index"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+        
+        
   
+
+
   
-    <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#2021"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;strong&gt;</span>2021<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"taxonomy__count"</span><span class="nt">&gt;</span>18<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__taxonomy"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;strong&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-fw fa-tags"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> 태그: <span class="nt">&lt;/strong&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">itemprop=</span><span class="s">"keywords"</span><span class="nt">&gt;</span>
+    
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/tags/#road-map"</span> <span class="na">class=</span><span class="s">"page__taxonomy-item p-category"</span> <span class="na">rel=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Road map<span class="nt">&lt;/a&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sep"</span><span class="nt">&gt;</span>, <span class="nt">&lt;/span&gt;</span>
+    
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/tags/#to-do"</span> <span class="na">class=</span><span class="s">"page__taxonomy-item p-category"</span> <span class="na">rel=</span><span class="s">"tag"</span><span class="nt">&gt;</span>To do<span class="nt">&lt;/a&gt;</span>
+    
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+
+
+
+
   
-<span class="nt">&lt;/ul&gt;</span>
 
 
+  
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__taxonomy"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;strong&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-fw fa-folder-open"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> 카테고리: <span class="nt">&lt;/strong&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">itemprop=</span><span class="s">"keywords"</span><span class="nt">&gt;</span>
+    
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/categories/#to-do"</span> <span class="na">class=</span><span class="s">"page__taxonomy-item p-category"</span> <span class="na">rel=</span><span class="s">"tag"</span><span class="nt">&gt;</span>To do<span class="nt">&lt;/a&gt;</span>
+    
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
 
 
-  <span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"2021"</span> <span class="na">class=</span><span class="s">"taxonomy__section"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__subtitle"</span><span class="nt">&gt;</span>2021<span class="nt">&lt;/h2&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"entries-list"</span><span class="nt">&gt;</span>
-      
         
 
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__date"</span><span class="nt">&gt;&lt;strong&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-fw fa-calendar-alt"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> 업데이트:<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"dt-published"</span> <span class="na">datetime=</span><span class="s">"2021-08-01T00:00:00+09:00"</span><span class="nt">&gt;</span>August 1, 2021<span class="nt">&lt;/time&gt;&lt;/p&gt;</span>
+
+      <span class="nt">&lt;/footer&gt;</span>
+
+      <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"page__share"</span><span class="nt">&gt;</span>
+  
+    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"page__share-title"</span><span class="nt">&gt;</span>공유하기<span class="nt">&lt;/h4&gt;</span>
+  
+
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://twitter.com/intent/tweet?text=%ED%95%A0+%EC%9D%BC+%EB%AA%A9%EB%A1%9D%20https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fto%2520do%2F%25ED%2595%25A0-%25EC%259D%25BC-%25EB%25AA%25A9%25EB%25A1%259D%2F"</span> <span class="na">class=</span><span class="s">"btn btn--twitter"</span> <span class="na">onclick=</span><span class="s">"window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"</span> <span class="na">title=</span><span class="s">"공유하기 Twitter"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-fw fa-twitter"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;span&gt;</span> Twitter<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fto%2520do%2F%25ED%2595%25A0-%25EC%259D%25BC-%25EB%25AA%25A9%25EB%25A1%259D%2F"</span> <span class="na">class=</span><span class="s">"btn btn--facebook"</span> <span class="na">onclick=</span><span class="s">"window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"</span> <span class="na">title=</span><span class="s">"공유하기 Facebook"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-fw fa-facebook"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;span&gt;</span> Facebook<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fitsbeenalongday.github.io%2F%2Fto%2520do%2F%25ED%2595%25A0-%25EC%259D%25BC-%25EB%25AA%25A9%25EB%25A1%259D%2F"</span> <span class="na">class=</span><span class="s">"btn btn--linkedin"</span> <span class="na">onclick=</span><span class="s">"window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"</span> <span class="na">title=</span><span class="s">"공유하기 LinkedIn"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-fw fa-linkedin"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;span&gt;</span> LinkedIn<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
 
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+      
+  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+    
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"pagination--pager disabled"</span><span class="nt">&gt;</span>이전<span class="nt">&lt;/a&gt;</span>
+    
+    
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/blog/Jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0/"</span> <span class="na">class=</span><span class="s">"pagination--pager"</span> <span class="na">title=</span><span class="s">"Jekyll 블로그 세팅하기
+"</span><span class="nt">&gt;</span>다음<span class="nt">&lt;/a&gt;</span>
+    
+  <span class="nt">&lt;/nav&gt;</span>
+
+    <span class="nt">&lt;/div&gt;</span>
+
+    
+  <span class="nt">&lt;/article&gt;</span>
+
+  
+  
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page__related"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"page__related-title"</span><span class="nt">&gt;</span>연관<span class="nt">&lt;/h2&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid__wrapper"</span><span class="nt">&gt;</span>
+        
+          
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.1 요청과 응답 이해하기
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          최대 1 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+        
+          
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/REST%EC%99%80-%EB%9D%BC%EC%9A%B0%ED%8C%85-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.2 REST와 라우팅 사용하기
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          최대 1 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+        
+          
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid__item"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
     
     <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
@@ -435,12 +591,12 @@ author_profile: true # 좌측의 유저 프로필
   <span class="nt">&lt;/article&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-      
         
+          
 
 
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid__item"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
     
     <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
@@ -475,655 +631,11 @@ author_profile: true # 좌측의 유저 프로필
   <span class="nt">&lt;/article&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-      
         
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/3.5-%ED%8C%8C%EC%9D%BC-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%A0%91%EA%B7%BC%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>3.5 파일 시스템 접근하기
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/blog/Jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>Jekyll 블로그에 비밀번호 설정하기
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>1. 원리 및 구현
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/3.4-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>3.4 노드 내장 모듈 사용하기
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/3.3-%EB%85%B8%EB%93%9C-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>3.3 노드 내장 객체 알아보기
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/3.2-%EB%AA%A8%EB%93%88%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>3.2 모듈로 만들기
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/3.1-REPL-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>3.1 REPL 사용하기
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/2.3-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>2.3 프론트 엔드 자바스크립트
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/2.2-async-await/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>2.2 async await
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/2.1-%ED%94%84%EB%A1%9C%EB%AF%B8%EC%8A%A4/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>2.1 프로미스
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/1.5-%EC%B0%B8%EA%B3%A0%ED%95%A0-%EB%A7%8C%ED%95%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%AA%A8%EC%9D%8C/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>1.5 참고할 만한 사이트 모음
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/1.4-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>1.4 개발 환경 설정
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/1.3-%EC%84%9C%EB%B2%84-%EC%99%B8%EC%9D%98-%EB%85%B8%EB%93%9C/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>1.3 서버 외의 노드
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/1.2-%EC%84%9C%EB%B2%84%EB%A1%9C%EC%84%9C%EC%9D%98-%EB%85%B8%EB%93%9C/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>1.2 서버로서의 노드
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/1.1-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>1.1 핵심 개념 이해하기
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/blog/Jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>Jekyll 블로그 세팅하기
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          2 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-
-
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
-        
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/to%20do/%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>할 일 목록
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>현재 내 자신을 알라, 난 앞으로 무엇을 해야하는가?
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-      
+      <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#page-title"</span> <span class="na">class=</span><span class="s">"back-to-top"</span><span class="nt">&gt;</span>맨 위로 이동 <span class="ni">&amp;uarr;</span><span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/section&gt;</span>
-
-
-  <span class="nt">&lt;/div&gt;</span>
+  
+  
 <span class="nt">&lt;/div&gt;</span>
 <span class="c">&lt;!-- 작성된 마크다운이 트랜스 파일링되어 렌더링 됨 --&gt;</span>
 
@@ -1132,7 +644,7 @@ author_profile: true # 좌측의 유저 프로필
   <span class="nt">&lt;li&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#2021"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;strong&gt;</span>2021<span class="nt">&lt;/strong&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"taxonomy__count"</span><span class="nt">&gt;</span>18<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"taxonomy__count"</span><span class="nt">&gt;</span>20<span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   
@@ -1143,6 +655,82 @@ author_profile: true # 좌측의 유저 프로필
   <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__subtitle"</span><span class="nt">&gt;</span>2021<span class="nt">&lt;/h2&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"entries-list"</span><span class="nt">&gt;</span>
      
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.1 요청과 응답 이해하기
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          최대 1 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+  
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/REST%EC%99%80-%EB%9D%BC%EC%9A%B0%ED%8C%85-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.2 REST와 라우팅 사용하기
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          최대 1 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+  
 
 
 

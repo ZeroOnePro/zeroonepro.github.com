@@ -1,4 +1,4 @@
-I"�U<p><br />
+I"�k<p><br />
 <br />
 <br /></p>
 
@@ -481,127 +481,127 @@ author_profile: true # 좌측의 유저 프로필
     
     <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
       
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.3 쿠키와 세션 이해하기
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          최대 1 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+        
+          
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/https%EC%99%80-http2/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.4 https와 http2
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          최대 1 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+        
+          
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/cluster/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.5 cluster
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          최대 1 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+        
+          
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.1 요청과 응답 이해하기
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-        
-          
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/REST%EC%99%80-%EB%9D%BC%EC%9A%B0%ED%8C%85-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.2 REST와 라우팅 사용하기
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-        
-          
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/3.7-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>3.7 예외 처리하기
-<span class="nt">&lt;/a&gt;</span>
-      
-    <span class="nt">&lt;/h2&gt;</span>
-    
-
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
-    
-
-    
-
-    
-      
-      
-
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        
-          최대 1 분 소요
-        
-      <span class="nt">&lt;/span&gt;</span>
-    
-  <span class="nt">&lt;/p&gt;</span>
-
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-        
-          
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid__item"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
-    
-    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
-      
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/3.6-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>3.6 이벤트 이해하기
 <span class="nt">&lt;/a&gt;</span>
       
     <span class="nt">&lt;/h2&gt;</span>
@@ -644,7 +644,7 @@ author_profile: true # 좌측의 유저 프로필
   <span class="nt">&lt;li&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#2021"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;strong&gt;</span>2021<span class="nt">&lt;/strong&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"taxonomy__count"</span><span class="nt">&gt;</span>20<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"taxonomy__count"</span><span class="nt">&gt;</span>23<span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   
@@ -655,6 +655,120 @@ author_profile: true # 좌측의 유저 프로필
   <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__subtitle"</span><span class="nt">&gt;</span>2021<span class="nt">&lt;/h2&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"entries-list"</span><span class="nt">&gt;</span>
      
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.3 쿠키와 세션 이해하기
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          최대 1 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+  
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/https%EC%99%80-http2/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.4 https와 http2
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          최대 1 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+  
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"archive__item"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"https://schema.org/CreativeWork"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"archive__item-title no_toc"</span> <span class="na">itemprop=</span><span class="s">"headline"</span><span class="nt">&gt;</span>
+      
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/node.js/cluster/"</span> <span class="na">rel=</span><span class="s">"permalink"</span><span class="nt">&gt;</span>4.5 cluster
+<span class="nt">&lt;/a&gt;</span>
+      
+    <span class="nt">&lt;/h2&gt;</span>
+    
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"page__meta"</span><span class="nt">&gt;</span>
+    
+
+    
+
+    
+      
+      
+
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page__meta-readtime"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        
+          최대 1 분 소요
+        
+      <span class="nt">&lt;/span&gt;</span>
+    
+  <span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"archive__item-excerpt"</span> <span class="na">itemprop=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+  
 
 
 

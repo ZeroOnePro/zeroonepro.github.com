@@ -127,6 +127,7 @@ GEM
     unicode-display_width (1.7.0)
 
 PLATFORMS
+  -darwin-21
   x86_64-darwin-20
 
 DEPENDENCIES
@@ -137,4 +138,4 @@ DEPENDENCIES
   rake (>= 12.3.3)
 
 BUNDLED WITH
-   2.2.6
+   2.2.33

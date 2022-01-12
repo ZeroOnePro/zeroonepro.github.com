@@ -1,0 +1,51 @@
+I"G<h2 id="wide-page">wide-page</h2>
+
+<ul>
+  <li>minimal mistakes를 사용하다보니 콘텐츠가 보여지는 영역의 너비가 너무 좁다고 느낌</li>
+  <li>minimal mistakes 자체에서 wide page를 지원해줍니다.</li>
+  <li><a href="https://mmistakes.github.io/minimal-mistakes/docs/layouts/#wide-page">공식 문서</a></li>
+  <li>하지만 이런 경우 toc이 상단에 고정되므로 이것을 쓰기에는 문제가 있다.</li>
+</ul>
+
+<h2 id="width-조절">width 조절</h2>
+
+<ul>
+  <li>github.io/_sass 폴더/minimal-mistakes/_variables.scss</li>
+  <li>기본 세팅 값 주석 처리</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/*
+   Grid
+   ========================================================================== */</span>
+
+  <span class="err">$</span><span class="nt">right-sidebar-width-narrow</span><span class="o">:</span> <span class="err">100</span><span class="nt">px</span> <span class="o">!</span><span class="nt">default</span><span class="o">;</span>    <span class="o">//</span> <span class="nt">default</span> <span class="err">200</span><span class="nt">px</span>
+  <span class="err">$</span><span class="nt">right-sidebar-width</span><span class="o">:</span> <span class="err">200</span><span class="nt">px</span> <span class="o">!</span><span class="nt">default</span><span class="o">;</span>           <span class="o">//</span> <span class="nt">default</span> <span class="err">300</span><span class="nt">px</span>
+  <span class="err">$</span><span class="nt">right-sidebar-width-wide</span><span class="o">:</span> <span class="err">250</span><span class="nt">px</span> <span class="o">!</span><span class="nt">default</span><span class="o">;</span>      <span class="o">//</span> <span class="nt">default</span> <span class="err">400</span><span class="nt">px</span>
+</code></pre></div></div>
+
+<h2 id="font-사이즈-조절">font 사이즈 조절</h2>
+
+<ul>
+  <li>font사이즈도 너무 크다고 생각되어 크기를 줄였습니다.</li>
+  <li>github.io/_sass/minimal-mistakes/_reset.scss</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  <span class="nt">font-size</span><span class="o">:</span> <span class="err">16</span><span class="nt">px</span><span class="o">;</span>                    <span class="o">//</span> <span class="nt">Default</span> <span class="err">16</span><span class="nt">px</span><span class="o">;</span>
+
+  <span class="k">@include</span> <span class="n">breakpoint</span><span class="p">(</span><span class="err">$</span><span class="nb">medium</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>                  <span class="err">//</span> <span class="err">Default</span> <span class="err">18px;</span>
+  <span class="p">}</span>
+
+  <span class="k">@include</span> <span class="n">breakpoint</span><span class="p">(</span><span class="err">$</span><span class="nb">large</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>                  <span class="err">//</span> <span class="err">Default</span> <span class="err">20px;</span>
+  <span class="p">}</span>
+
+  <span class="k">@include</span> <span class="n">breakpoint</span><span class="p">(</span><span class="err">$</span><span class="nb">x-large</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>                  <span class="err">//</span> <span class="err">Default</span> <span class="err">22px;</span>
+  <span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>끄읏!</p>
+:ET
